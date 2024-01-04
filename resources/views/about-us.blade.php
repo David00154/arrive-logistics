@@ -30,16 +30,19 @@
                             href="{{ route('get-quote') }}">Get a quote</a><a
                             class="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeIn"
                             href="https://www.youtube.com/watch?v=kCGf5uNE13I"><img
-                                src="/static/imgs/template/icons/play.svg" alt="{{ config('app.name') }}"></a></div>
+                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/play.svg"
+                                alt="{{ config('app.name') }}"></a></div>
                 </div>
                 <div class="col-lg-6 position-relative mb-30">
                     <div class="row align-items-end">
                         <div class="col-lg-5 col-md-5 col-sm-5"><img class="mb-20 wow animate__animated animate__fadeIn"
-                                src="/static/imgs/page/about/img-about-1-1.png" alt="{{ config('app.name') }}"><img
-                                class="wow animate__animated animate__fadeIn"
-                                src="/static/imgs/page/about/img-about-1-2.png" alt="{{ config('app.name') }}"></div>
+                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-1-1.png"
+                                alt="{{ config('app.name') }}"><img class="wow animate__animated animate__fadeIn"
+                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-1-2.png"
+                                alt="{{ config('app.name') }}"></div>
                         <div class="col-lg-7 col-md-7 col-sm-7"><img class="wow animate__animated animate__fadeIn"
-                                src="/static/imgs/page/about/img-about-1-3.png" alt="{{ config('app.name') }}"></div>
+                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-1-3.png"
+                                alt="{{ config('app.name') }}"></div>
                     </div>
                     <div class="quote-center shape-2"></div>
                 </div>
@@ -51,7 +54,8 @@
         <div class="container">
             <div class="row align-items-center item-about-2">
                 <div class="col-lg-6">
-                    <img class="wow animate__animated animate__fadeIn" src="/static/imgs/page/about/img-about-2-1.png"
+                    <img class="wow animate__animated animate__fadeIn"
+                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-2-1.png"
                         alt="{{ config('app.name') }}">
                 </div>
                 <div class="col-lg-6">
@@ -108,11 +112,13 @@
                     </div>
                 </div>
                 <div class="col-lg-6"><img class="wow animate__animated animate__fadeIn"
-                        src="/static/imgs/page/about/img-about-2-2.png" alt="{{ config('app.name') }}"></div>
+                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-2-2.png"
+                        alt="{{ config('app.name') }}"></div>
             </div>
             <div class="row align-items-center item-about-2">
                 <div class="col-lg-6"><img class="wow animate__animated animate__fadeIn"
-                        src="/static/imgs/page/about/img-about-2-3.png" alt="{{ config('app.name') }}"></div>
+                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-2-3.png"
+                        alt="{{ config('app.name') }}"></div>
                 <div class="col-lg-6">
                     <div class="box-info-aabout-2"><span class="btn btn-tag wow animate__animated animate__fadeIn">Our
                             Partners</span>
@@ -124,9 +130,11 @@
                             industry is our strength, which support us to deliver our promises to our customers.</p>
                         <div class="box-button d-flex mt-40"><a
                                 class="hover-up mr-10 wow animate__animated animate__fadeIn" href="about.html#"><img
-                                    src="/static/imgs/template/appstore-btn.png" alt="{{ config('app.name') }}"></a><a
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
+                                    alt="{{ config('app.name') }}"></a><a
                                 class="hover-up wow animate__animated animate__fadeIn" href="about.html#"><img
-                                    src="/static/imgs/template/google-play-btn.png" alt="{{ config('app.name') }}"></a>
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
+                                    alt="{{ config('app.name') }}"></a>
                         </div>
                     </div>
                 </div>

@@ -50,8 +50,9 @@
                             first Order…!</p>
                         <div class="mb-25">
                             <div class="d-flex"><a class="mr-10" href="index-3.html#"><img
-                                        src="/static/imgs/template/appstore-btn.png" alt="transp"></a><a
-                                    href="index-3.html#"><img src="/static/imgs/template/google-play-btn.png"
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
+                                        alt="transp"></a><a href="index-3.html#"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
                                         alt="transp"></a></div>
                         </div>
                     </div>

@@ -12,10 +12,11 @@
     <!-- Scripts -->
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="/static/imgs/template/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/favicon.svg">
 
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="{{ env('STATIC_ASSET_URL', '') }}/static/css/style.css">
+    <link rel="stylesheet" href="{{ env('STATIC_ASSET_URL', '') }}/static/css/custom.css">
 
     @vite(['resources/js/app.js'])
 
@@ -51,27 +52,28 @@
 
     <livewire:base.footer>
 
-        <script src="/static/js/vendors/modernizr-3.6.0.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/jquery-3.6.0.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/jquery-migrate-3.3.0.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/bootstrap.bundle.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/waypoints.js" data-navigate-once></script>
-        <script src="/static/js/vendors/wow.js" data-navigate-once></script>
-        <script src="/static/js/vendors/magnific-popup.js" data-navigate-once></script>
-        <script src="/static/js/vendors/perfect-scrollbar.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/select2.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/isotope.js" data-navigate-once></script>
-        <script src="/static/js/vendors/scrollup.js" data-navigate-once></script>
-        <script src="/static/js/vendors/swiper-bundle.min.js" data-navigate-once></script>
-        <script src="/static/js/vendors/noUISlider.js" data-navigate-once></script>
-        <script src="/static/js/vendors/slider.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/modernizr-3.6.0.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/jquery-3.6.0.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/jquery-migrate-3.3.0.min.js" data-navigate-once>
+        </script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/bootstrap.bundle.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/waypoints.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/wow.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/magnific-popup.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/perfect-scrollbar.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/select2.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/isotope.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/scrollup.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/swiper-bundle.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/noUISlider.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/slider.js" data-navigate-once></script>
         <!-- Count down-->
-        <script src="/static/js/vendors/counterup.js" data-navigate-once></script>
-        <script src="/static/js/vendors/jquery.countdown.min.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/counterup.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/jquery.countdown.min.js" data-navigate-once></script>
         <!-- Count down-->
-        <script src="/static/js/vendors/jquery.elevatezoom.js" data-navigate-once></script>
-        <script src="/static/js/vendors/slick.js" data-navigate-once></script>
-        <script src="/static/js/main.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/jquery.elevatezoom.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/slick.js" data-navigate-once></script>
+        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/main.js" data-navigate-once></script>
 </body>
 
 </html>

@@ -15,3 +15,6 @@ export default defineConfig({
         }),
     ],
 });
+
+
+// \{\{\s*Vite::asset\('resources([^']*\.([a-zA-Z]+))?'[^']*\}\}

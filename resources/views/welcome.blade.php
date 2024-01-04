@@ -16,22 +16,28 @@
                     <div class="box-swiper">
                         <div class="swiper-container swiper-group-6 pb-0">
                             <div class="swiper-wrapper wow animate__animated animate__fadeIn">
-                                <div class="swiper-slide"><img src="/static/imgs/slider/logo/alea.png"
+                                <div class="swiper-slide"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/slider/logo/alea.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
-                                <div class="swiper-slide"><img src="/static/imgs/slider/logo/land.png"
+                                <div class="swiper-slide"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/slider/logo/land.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
-                                <div class="swiper-slide"><img src="/static/imgs/slider/logo/logis.png"
+                                <div class="swiper-slide"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/slider/logo/logis.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
-                                <div class="swiper-slide"><img src="/static/imgs/slider/logo/truck.png"
+                                <div class="swiper-slide"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/slider/logo/truck.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
-                                <div class="swiper-slide"><img src="/static/imgs/slider/logo/saltos.png"
+                                <div class="swiper-slide"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/slider/logo/saltos.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
-                                <div class="swiper-slide"><img src="/static/imgs/slider/logo/creati.png"
+                                <div class="swiper-slide"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/slider/logo/creati.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
                             </div>
@@ -46,7 +52,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-30">
-                    <div class="box-image-info-7"><img src="/static/imgs/page/homepage4/img-info-7.png"
+                    <div class="box-image-info-7"><img
+                            src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage4/img-info-7.png"
                             alt="{{ config('app.name') }}">
                         <div class="quote shape-2"></div>
                     </div>
@@ -77,9 +84,11 @@
                             </div>
                         </div>
                         <div class="d-flex mt-20"><a class="mr-10 wow animate__animated animate__fadeIn"
-                                href="index-4.html#"><img src="/static/imgs/template/appstore-btn.png"
+                                href="index-4.html#"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
                                     alt="{{ config('app.name') }}"></a><a class="wow animate__animated animate__fadeIn"
-                                href="index-4.html#"><img src="/static/imgs/template/google-play-btn.png"
+                                href="index-4.html#"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
                                     alt="{{ config('app.name') }}"></a></div>
                     </div>
                 </div>
@@ -89,7 +98,8 @@
     {{-- Delivering results for industry leaders --}}
     <section class="section mt-85">
         <div class="container">
-            <div class="text-center"><img class="mb-15" src="/static/imgs/template/icons/favicon.svg"
+            <div class="text-center"><img class="mb-15"
+                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/favicon.svg"
                     alt="{{ config('app.name') }}">
                 <p class="font-md color-grey-700 wow animate__animated animate__fadeIn">Delivering Results for Industry
                     Leaders</p>
@@ -100,8 +110,10 @@
                 <div class="col-xl-7 col-lg-6 mb-30">
                     <div class="box-images-pround">
                         <div class="box-images wow animate__animated animate__fadeIn"><img class="img-main"
-                                src="/static/imgs/page/homepage1/img1.png" alt="{{ config('app.name') }}">
-                            <div class="image-2 shape-3"><img src="/static/imgs/page/homepage1/icon1.png"
+                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img1.png"
+                                alt="{{ config('app.name') }}">
+                            <div class="image-2 shape-3"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/icon1.png"
                                     alt="{{ config('app.name') }}">
                             </div>
                         </div>
@@ -167,9 +179,9 @@
                         </div>
                         <div class="mt-30 text-start d-flex wow animate__animated animate__fadeIn"><a
                                 class="hover-up mr-10" href="index.html#"><img
-                                    src="/static/imgs/template/appstore-btn.png"
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
                                     alt="{{ config('app.name') }}"></a><a class="hover-up" href="index.html#"><img
-                                    src="/static/imgs/template/google-play-btn.png"
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
                                     alt="{{ config('app.name') }}"></a></div>
                     </div>
                 </div>
@@ -242,7 +254,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
                     <div class="cardLeadingCompany">
                         <div class="cardImage"><span class="img wow animate__animated animate__fadeIn"><img
-                                    src="/static/imgs/page/homepage1/handover.png"
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/handover.png"
                                     alt="{{ config('app.name') }}"></span></div>
                         <div class="cardInfo">
                             <h3 class="color-brand-1 wow animate__animated animate__fadeIn"><span>+</span><span
@@ -254,7 +266,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
                     <div class="cardLeadingCompany">
-                        <div class="cardImage"><span class="img"><img src="/static/imgs/page/homepage1/cities.png"
+                        <div class="cardImage"><span class="img"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/cities.png"
                                     alt="{{ config('app.name') }}"></span></div>
                         <div class="cardInfo">
                             <h3 class="color-brand-1 wow animate__animated animate__fadeIn"><span>+</span><span
@@ -266,7 +279,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
                     <div class="cardLeadingCompany">
-                        <div class="cardImage"><span class="img"><img src="/static/imgs/page/homepage1/client.png"
+                        <div class="cardImage"><span class="img"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/client.png"
                                     alt="{{ config('app.name') }}"></span></div>
                         <div class="cardInfo">
                             <h3 class="color-brand-1 wow animate__animated animate__fadeIn"><span>+</span><span
@@ -278,7 +292,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
                     <div class="cardLeadingCompany">
                         <div class="cardImage"><span class="img"><img
-                                    src="/static/imgs/page/homepage1/company.png"
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/company.png"
                                     alt="{{ config('app.name') }}"></span></div>
                         <div class="cardInfo">
                             <h3 class="color-brand-1 wow animate__animated animate__fadeIn"><span>+</span><span
@@ -404,7 +418,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="box-image-contact"><img
-                                src="/static/imgs/page/homepage1/img-contact.png"
+                                src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/img-contact.png"
                                 alt="{{ config('app.name') }}"></div>
                     </div>
                 </div>
@@ -465,7 +479,7 @@
                                     <div class="mb-30">
                                         <div class="card-testimonial-grid card-testimonial-3">
                                             <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="/static/imgs/page/homepage1/author.png"
+                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
                                                         alt="{{ config('app.name') }}"></a>
                                                 <div class="author-info"><a href="index-3.html#"><span
                                                             class="font-xl-bold color-brand-2 author-name">Guy
@@ -482,7 +496,7 @@
                                     <div class="mb-30">
                                         <div class="card-testimonial-grid card-testimonial-3">
                                             <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="/static/imgs/page/homepage1/author.png"
+                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
                                                         alt="{{ config('app.name') }}"></a>
                                                 <div class="author-info"><a href="index-3.html#"><span
                                                             class="font-xl-bold color-brand-2 author-name">Guy
@@ -503,7 +517,7 @@
                                     <div class="mb-30">
                                         <div class="card-testimonial-grid card-testimonial-3">
                                             <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="/static/imgs/page/homepage1/author.png"
+                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
                                                         alt="{{ config('app.name') }}"></a>
                                                 <div class="author-info"><a href="index-3.html#"><span
                                                             class="font-xl-bold color-brand-2 author-name">Guy
@@ -520,7 +534,7 @@
                                     <div class="mb-30">
                                         <div class="card-testimonial-grid card-testimonial-3">
                                             <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="/static/imgs/page/homepage1/author.png"
+                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
                                                         alt="{{ config('app.name') }}"></a>
                                                 <div class="author-info"><a href="index-3.html#"><span
                                                             class="font-xl-bold color-brand-2 author-name">Guy
@@ -552,13 +566,16 @@
                             inquisitive? Have a
                             read through some of our FAQs or contact our supporters for help</p>
                         <div class="box-gallery-faqs">
-                            <div class="image-top"><img src="/static/imgs/page/homepage1/img-faq1.png"
+                            <div class="image-top"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img-faq1.png"
                                     alt="{{ config('app.name') }}">
                             </div>
                             <div class="image-bottom">
-                                <div class="image-faq-1"><img src="/static/imgs/page/homepage1/img-faq2.png"
+                                <div class="image-faq-1"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img-faq2.png"
                                         alt="{{ config('app.name') }}"></div>
-                                <div class="image-faq-2"><img src="/static/imgs/page/homepage1/img-faq3.png"
+                                <div class="image-faq-2"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img-faq3.png"
                                         alt="{{ config('app.name') }}"></div>
                             </div>
                         </div>

@@ -98,23 +98,23 @@ state([
                     <h5 class="mb-10 color-brand-1">Gallery</h5>
                     <div class="galleries-footer">
                         <ul class="list-imgs">
-                            <li> <img src="/static/imgs/page/homepage1/gal1.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal1.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal2.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal2.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal3.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal3.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal4.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal4.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal5.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal5.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal6.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal6.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal7.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal7.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal8.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal8.png"
                                     alt="{{ config('app.name') }}"></li>
-                            <li> <img src="/static/imgs/page/homepage1/gal9.png"
+                            <li> <img src="{{env("STATIC_ASSET_URL", "")}}/static/imgs/page/homepage1/gal9.png"
                                     alt="{{ config('app.name') }}"></li>
                         </ul>
                     </div>
