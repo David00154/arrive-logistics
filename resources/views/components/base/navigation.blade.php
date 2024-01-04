@@ -90,8 +90,8 @@
                                         <div class="menu-col">
                                             <h6 class="color-brand-2 mb-15">{{ $solution['title'] }}</h6>
                                             <div class="menu-image">
-                                                <img src="{{ Vite::asset('resources/static/' . $solution['image']) }}"
-                                                    alt="arrivelogistics">
+                                                <img src="{{ env('STATIC_ASSET_URL', '') }}/static/{{ $solution['image'] }}"
+                                                    alt="{{ config('app.name') }}">
                                             </div>
                                             <ul class="megamenu">
                                                 @foreach ($solution['megamenu'] as $megamenu)
