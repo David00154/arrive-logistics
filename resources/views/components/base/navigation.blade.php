@@ -78,7 +78,7 @@
                     <nav class="nav-main-menu d-none d-xl-block">
                         <ul class="main-menu">
                             <li>
-                                <a class="active" href="/">{{ __('Home') }}</a>
+                                <a class="" href="/">{{ __('Home') }}</a>
                             </li>
                             <li>
                                 <a href="/about">{{ __('About Us') }}</a>

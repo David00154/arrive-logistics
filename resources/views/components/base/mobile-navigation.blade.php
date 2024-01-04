@@ -17,7 +17,7 @@
                     <nav class="mt-15">
                         <ul class="mobile-menu font-heading">
                             <li>
-                                <a class="active" href="/">{{ __('Home') }}</a>
+                                <a class="" href="/">{{ __('Home') }}</a>
                             </li>
                             <li>
                                 <a href="/about">{{ __('About Us') }}</a>
