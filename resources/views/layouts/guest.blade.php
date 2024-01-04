@@ -15,8 +15,28 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/static/imgs/template/favicon.svg') }}">
 
     <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/style.css') }}">
-    <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/custom.css') }}">
+    {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/custom.css') }}"> --}}
+
     @vite(['resources/js/app.js'])
+
+    <style>
+        .header .main-menu li div.sub-menu.five-col.four-col .menu-col {
+            width: 50%;
+        }
+
+        label {
+            font-weight: 500;
+        }
+
+        .invalid-error {
+            width: 100%;
+            margin-top: 0.70rem;
+            font-size: .899em;
+            display: inline-block;
+            color: #ff4141;
+        }
+    </style>
+
 </head>
 
 <body>

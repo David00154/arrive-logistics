@@ -1,6 +1,7 @@
 import './bootstrap';
 import.meta.glob([
-    "../static/**/*"
+    "../static/**/*",
+    "../static/css/custom.css"
 ])
 // document.addEventListener('DOMContentLoaded', () => {
 
