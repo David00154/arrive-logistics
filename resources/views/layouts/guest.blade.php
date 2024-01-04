@@ -14,8 +14,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/static/imgs/template/favicon.svg') }}">
 
-    <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/style.css') }}">
-    {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/custom.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ Vite::asset('resources/static/css/custom.css') }}">
 
     @vite(['resources/js/app.js'])
 
