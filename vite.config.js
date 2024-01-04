@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { globSync } from "glob"
 
-const p = globSync(["resources/static/**/*.{png,jpeg,css,js,svg}"]);
+// const p = globSync(["resources/static/**/*.{png,jpeg,css,js,svg}"]);
 // console.log(p)
 export default defineConfig({
     plugins: [
@@ -10,7 +10,6 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                ...p
             ],
             refresh: true,
         }),

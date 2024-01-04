@@ -60,12 +60,12 @@
             <div class="header-contact">
                 <div class="box-header-contact-1 mr-30">
                     <div class="icon-contact"> <img alt="{{ config('app.name') }}"
-                            src="{{ Vite::asset('resources/static/imgs/page/homepage3/address.png') }}"></div>
+                            src="/static/imgs/page/homepage3/address.png"></div>
                     <div class="info-contact">65 Allerton Street 901 N Pitt Str, USA</div>
                 </div>
                 {{-- <div class="box-header-contact-2">
                     <div class="icon-contact"> <img alt="{{config("app.name")}}"
-                            src="{{ Vite::asset('resources/static/imgs/page/homepage3/phone.png') }}"></div>
+                            src="/static/imgs/page/homepage3/phone.png"></div>
                     <div class="info-contact">65 Allerton Street 901 N Pitt Str, USA</div>
                 </div> --}}
             </div>
@@ -129,15 +129,15 @@
                         <div class="dropdown-account">
                             <ul>
                                 <li><a class="font-md" href="/#"><img
-                                            src="{{ Vite::asset('resources/static/imgs/template/icons/en.png') }}"
+                                            src="/static/imgs/template/icons/en.png"
                                             alt="{{config("app.name")}}">
                                         English</a></li>
                                 <li><a class="font-md" href="/#"><img
-                                            src="{{ Vite::asset('resources/static/imgs/template/icons/fr.png') }}"
+                                            src="/static/imgs/template/icons/fr.png"
                                             alt="{{config("app.name")}}">
                                         French</a></li>
                                 <li><a class="font-md" href="/#"><img
-                                            src="{{ Vite::asset('resources/static/imgs/template/icons/cn.png') }}"
+                                            src="/static/imgs/template/icons/cn.png"
                                             alt="{{config("app.name")}}">
                                         Chiness</a></li>
                             </ul>

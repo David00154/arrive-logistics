@@ -71,8 +71,7 @@
                </div>
            </div>
            <div class="col-lg-4">
-               <div class="box-image-contact"><img
-                       src="{{ Vite::asset('resources/static/imgs/page/homepage1/img-contact.png') }}"
+               <div class="box-image-contact"><img src="/static/imgs/page/homepage1/img-contact.png"
                        alt="{{ config('app.name') }}"></div>
            </div>
        </div>

@@ -7,8 +7,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 mb-30 text-center">
-                    <div class="box-404-right"><img src="{{ Vite::asset('resources/static/imgs/page/404/img.png') }}"
-                            alt="transp"></div>
+                    <div class="box-404-right"><img src="/static/imgs/page/404/img.png" alt="transp"></div>
                 </div>
                 <div class="col-lg-5 mb-30">
                     <div class="box-404-left">

@@ -109,14 +109,12 @@ title('FAQ');
                             inquisitive? Have a read through some of our FAQs or contact our supporters for help</p>
                         <div class="box-gallery-faqs">
                             <div class="image-top wow animate__animated animate__fadeIn"><img
-                                    src="{{ Vite::asset('resources/static/imgs/page/trackyourparcel/img-faqs1.png') }}"
+                                    src="/static/imgs/page/trackyourparcel/img-faqs1.png"
                                     alt="{{ config('app.name') }}"></div>
                             <div class="image-bottom wow animate__animated animate__fadeIn">
-                                <div class="image-faq-1"><img
-                                        src="{{ Vite::asset('resources/static/imgs/page/trackyourparcel/img-faqs2.png') }}"
+                                <div class="image-faq-1"><img src="/static/imgs/page/trackyourparcel/img-faqs2.png"
                                         alt="{{ config('app.name') }}"></div>
-                                <div class="image-faq-2"><img
-                                        src="{{ Vite::asset('resources/static/imgs/page/trackyourparcel/img-faqs3.png') }}"
+                                <div class="image-faq-2"><img src="/static/imgs/page/trackyourparcel/img-faqs3.png"
                                         alt="{{ config('app.name') }}"></div>
                             </div>
                         </div>

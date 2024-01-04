@@ -8,7 +8,7 @@ use function Livewire\Volt\{state};
 
 <section class="section d-block">
     <div class="banner-1 banner-4 wow animate__animated animate__fadeIn"
-        style="background-image:url({{ Vite::asset('resources/static/imgs/page/homepage4/banner.png') }})">
+        style="background-image:url(/static/imgs/page/homepage4/banner.png)">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -29,8 +29,8 @@ use function Livewire\Volt\{state};
                             href="index-4.html#">Calculate Package</a><a
                             class="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeIn"
                             href="https://www.youtube.com/watch?v=kCGf5uNE13I"><img
-                                src="{{ Vite::asset('resources/static/imgs/template/icons/play.svg') }}"
-                                alt="{{ config('app.name') }}">How it work ?</a></div>
+                                src="/static/imgs/template/icons/play.svg" alt="{{ config('app.name') }}">How it work
+                            ?</a></div>
                 </div>
             </div>
         </div>
@@ -42,8 +42,7 @@ use function Livewire\Volt\{state};
                     <div class="swiper-wrapper">
                         <div class="swiper-slide wow animate__animated animate__fadeIn">
                             <div class="card-offer hover-up">
-                                <div class="card-image"><img
-                                        src="{{ Vite::asset('resources/static/imgs/page/homepage1/cargo-ship.png') }}"
+                                <div class="card-image"><img src="/static/imgs/page/homepage1/cargo-ship.png"
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="card-info">
                                     <h5 class="color-brand-2 mb-15">Sea Forwarding</h5>
@@ -61,8 +60,7 @@ use function Livewire\Volt\{state};
                         </div>
                         <div class="swiper-slide wow animate__animated animate__fadeIn">
                             <div class="card-offer hover-up">
-                                <div class="card-image"><img
-                                        src="{{ Vite::asset('resources/static/imgs/page/homepage1/plane.png') }}"
+                                <div class="card-image"><img src="/static/imgs/page/homepage1/plane.png"
                                         alt="{{ config('app.name') }}">
                                 </div>
                                 <div class="card-info">
@@ -81,8 +79,7 @@ use function Livewire\Volt\{state};
                         </div>
                         <div class="swiper-slide wow animate__animated animate__fadeIn">
                             <div class="card-offer hover-up">
-                                <div class="card-image"><img
-                                        src="{{ Vite::asset('resources/static/imgs/page/homepage1/delivery.png') }}"
+                                <div class="card-image"><img src="/static/imgs/page/homepage1/delivery.png"
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="card-info">
                                     <h5 class="color-brand-2 mb-15">Land Transportation</h5>
@@ -100,8 +97,7 @@ use function Livewire\Volt\{state};
                         </div>
                         <div class="swiper-slide wow animate__animated animate__fadeIn">
                             <div class="card-offer hover-up">
-                                <div class="card-image"><img
-                                        src="{{ Vite::asset('resources/static/imgs/page/homepage1/delivery.png') }}"
+                                <div class="card-image"><img src="/static/imgs/page/homepage1/delivery.png"
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="card-info">
                                     <h5 class="color-brand-2 mb-15">Railway Logistics</h5>

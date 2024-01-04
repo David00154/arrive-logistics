@@ -13,8 +13,8 @@
                         href="{{ route('contact-us') }}">Contact Us</a><a
                         class="btn btn-play popup-youtube hover-up color-brand-2 wow animate__animated animate__fadeIn"
                         href="https://www.youtube.com/watch?v=kCGf5uNE13I"><img
-                            src="{{ Vite::asset('resources/static/imgs/template/icons/play.svg') }}"
-                            alt="{{ config('app.home') }}">How it work ?</a></div>
+                            src="/static/imgs/template/icons/play.svg" alt="{{ config('app.home') }}">How it work ?</a>
+                </div>
             </div>
             <livewire:pages.get-quote />
         </div>
