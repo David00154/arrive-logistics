@@ -15,12 +15,32 @@
     <link rel="shortcut icon" type="image/x-icon"
         href="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/favicon.svg">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ env('STATIC_ASSET_URL', '') }}/static/css/style.css">
+
+
+
     <link rel="stylesheet" href="{{ env('STATIC_ASSET_URL', '') }}/static/css/custom.css">
 
     @vite(['resources/js/app.js'])
 
-    <style>
+    <script defer>
+        if ("serviceWorker" in navigator) {
+            // window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("{{ env('STATIC_ASSET_URL', '') }}/service-worker.js")
+                .then((req) => {
+                    if (!req.active) {
+                        console.log("Service Worker: Registering...");
+                    }
+                })
+                .catch((err) => console.error(`Service Worker ${err}`));
+            // });
+        }
+    </script>
+
+    {{-- <style>
         .header .main-menu li div.sub-menu.five-col.four-col .menu-col {
             width: 50%;
         }
@@ -36,7 +56,7 @@
             display: inline-block;
             color: #ff4141;
         }
-    </style>
+    </style> --}}
 
 </head>
 
@@ -56,7 +76,12 @@
         <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/jquery-3.6.0.min.js" data-navigate-once></script>
         <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/jquery-migrate-3.3.0.min.js" data-navigate-once>
         </script>
-        <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/bootstrap.bundle.min.js" data-navigate-once></script>
+        {{-- <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/bootstrap.bundle.min.js" data-navigate-once></script> --}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+
         <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/waypoints.js" data-navigate-once></script>
         <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/wow.js" data-navigate-once></script>
         <script src="{{ env('STATIC_ASSET_URL', '') }}/static/js/vendors/magnific-popup.js" data-navigate-once></script>

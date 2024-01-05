@@ -74,8 +74,47 @@
                                             @enderror
                                         </div>
                                     </div>
+                                    <div class="col-lg-12">
+                                        @if ($errors->any())
+                                            <div class="alert alert-danger alert-dismissible fade show rounded-0 "
+                                                style="font-weight: 400" role="alert">
+                                                <strong>Error!</strong> Unable to submit the form. Fix this errors
+                                                above.
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close">
+                                                    {{-- <span aria-hidden="true">&times;</span> --}}
+                                                </button>
+                                            </div>
+                                        @endif
+                                        @if (session('error'))
+                                            <div class="alert alert-danger alert-dismissible fade show rounded-0 "
+                                                style="font-weight: 400" role="alert">
+                                                <strong>Error!</strong> {{ session('error') }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close">
+                                                    {{-- <span aria-hidden="true">&times;</span> --}}
+                                                </button>
+                                            </div>
+                                        @endif
+                                        @if (session('success'))
+                                            <div class="alert alert-success alert-dismissible fade show rounded-0 "
+                                                style="font-weight: 400" role="alert">
+                                                <strong>Success!</strong> {{ session('success') }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close">
+                                                    {{-- <span aria-hidden="true">&times;</span> --}}
+                                                </button>
+                                            </div>
+                                        @endif
+                                    </div>
                                     <div class="col-md-12">
-                                        <input class="btn btn-brand-1-big" type="submit" value="Submit Now">
+                                        <button class="btn btn-brand-1-big" type="submit">
+                                            Submit Now
+                                            <div wire:loading class="spinner-border spinner-border-sm ml-5"
+                                                role="status">
+                                                {{-- <span class="sr-only">Loading...</span> --}}
+                                            </div>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -107,7 +146,8 @@
                                     </svg>Email: {{ env('MAIL_FROM_ADDRESS') }}
                                 </p>
                                 <div class="line-border mb-25"></div>
-                                <p class="color-grey-700 font-md-bold wow animate__animated animate__fadeIn">Hours: 8:00
+                                <p class="color-grey-700 font-md-bold wow animate__animated animate__fadeIn">Hours:
+                                    8:00
                                     - 17:00, Mon - Sat</p>
                             </div>
                         </div>

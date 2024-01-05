@@ -38,10 +38,15 @@ class GetQuote extends Component
     public string $message_ = "";
     public function createQuote()
     {
-
+        $this->dispatch("quote-form:submit");
+        sleep(1);
         $validated = $this->validate(attributes: ["name", 'email', "phone", "company", "solution"]);
         $this->reset();
-        dd($validated);
+        // dd($validated);
+        session()->flash("success", "
+            Your estimate request was sent successfully.");
+        //code...
+
     }
     public function render()
     {

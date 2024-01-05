@@ -95,6 +95,79 @@
             </div>
         </div>
     </section>
+    {{-- How it works --}}
+    <section class="section">
+        <div class="container">
+            <div class="box-how-it-work-2 bg-brand-2 bg-how-it-work-2">
+                <div class="text-center">
+                    <h2 class="color-white wow animate__animated animate__fadeIn">How It Works</h2>
+                </div>
+                <div class="box-list-how-it-work">
+                    <ul class="list-how-works">
+                        <li>
+                            <div class="image-how"><span class="img wow animate__animated animate__fadeIn"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/order.png"
+                                        alt="{{ config('app.name') }}"></span></div>
+                            <div class="info-how">
+                                <h5 class="color-white wow animate__animated animate__fadeIn">Customer places order</h5>
+                                <p class="font-md color-white wow animate__animated animate__fadeIn">Inspection and
+                                    quality check of goods</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image-how"><span class="img"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/payment.png"
+                                        alt="{{ config('app.name') }}"></span></div>
+                            <div class="info-how">
+                                <h5 class="color-white wow animate__animated animate__fadeIn">Payment successful</h5>
+                                <p class="font-md color-white wow animate__animated animate__fadeIn">Payoneer, Paypal,
+                                    or Visa master card</p>
+                            </div>
+                        </li>
+                        <li class="dashed-2">
+                            <div class="image-how"><span class="img"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/warehouse.png"
+                                        alt="{{ config('app.name') }}"></span></div>
+                            <div class="info-how">
+                                <h5 class="color-white wow animate__animated animate__fadeIn">Warehouse receives order
+                                </h5>
+                                <p class="font-md color-white wow animate__animated animate__fadeIn">Check the accuracy
+                                    of the goods.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image-how"><span class="img"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/picked.png"
+                                        alt="{{ config('app.name') }}"></span></div>
+                            <div class="info-how">
+                                <h5 class="color-white wow animate__animated animate__fadeIn">Item picked, packed &
+                                    shipped</h5>
+                                <p class="font-md color-white wow animate__animated animate__fadeIn">Ship the goods to a
+                                    local carrier</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image-how"><span class="img"><img
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/delivery.png"
+                                        alt="{{ config('app.name') }}"></span></div>
+                            <div class="info-how">
+                                <h5 class="color-white wow animate__animated animate__fadeIn">Delivered & Measure
+                                    success</h5>
+                                <p class="font-md color-white wow animate__animated animate__fadeIn">Update order
+                                    status on the system</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-button-play-2"><a class="btn btn-play popup-youtube hover-up"
+                        href="https://www.youtube.com/watch?v=kCGf5uNE13I"><img
+                            src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage4/play-icon.png"
+                            alt="{{ config('app.name') }}"><span
+                            class="color-brand-2 wow animate__animated animate__fadeIn">How it work ?<br>Watch video
+                            tour</span></a></div>
+            </div>
+        </div>
+    </section>
     {{-- Delivering results for industry leaders --}}
     <section class="section mt-85">
         <div class="container">

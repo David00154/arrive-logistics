@@ -2,7 +2,7 @@
     <div class="mobile-header-wrapper-inner">
         <div class="mobile-header-content-area">
             <div class="mobile-logo">
-                <a class="btn btn-brand-1 hover-up" href="request-a-quote.html">
+                <a class="btn btn-brand-1 hover-up" href="{{ route('get-quote') }}">
                     <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round"
