@@ -19,7 +19,7 @@ class ContactUs extends Component
     #[Rule("required|email:strict|max:50")]
     public string $email = '';
 
-    #[Rule("required|min:12")]
+    #[Rule("required|max:12")]
     public string $phone = '';
 
     #[Rule("required|min:3|max:50")]
