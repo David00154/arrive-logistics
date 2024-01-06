@@ -18,20 +18,23 @@ use function Livewire\Volt\{state};
                             class="d-none d-lg-block">professional solutions</h1>
                     <div class="row">
                         <div class="col-lg-9">
-                            <p class="font-md color-white mb-20 wow animate__animated animate__fadeIn">Our experienced
-                                team of problem solvers and a commitment to always align with<br
-                                    class="d-none d-lg-block wow animate__animated animate__fadeIn">our client’s
-                                business goals and objectives is what drives mutual success.</p>
+                            <p class="font-md color-white mb-20 wow animate__animated animate__fadeIn">
+
+                                Embark on an efficient and reliable journey with our advanced logistics solutions. We
+                                seamlessly connect businesses worldwide, ensuring speedy and
+                                precise delivery.<br class="d-none d-lg-block wow animate__animated animate__fadeIn">
+                                Experience the future of logistics with our innovative, client-focused approach.</p>
                         </div>
                     </div>
-                    <div class="box-button mt-30"><a
-                            class="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeIn"
-                            href="index-4.html#">Calculate Package</a><a
-                            class="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeIn"
+                    <div class="box-button mt-30">
+                        <a class="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeIn"
+                            href="{{ route('get-quote') }}">Request a quote</a>
+                        <a class="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeIn"
                             href="https://www.youtube.com/watch?v=kCGf5uNE13I"><img
                                 src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/play.svg"
                                 alt="{{ config('app.name') }}">How it work
-                            ?</a></div>
+                            ?</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,8 +51,9 @@ use function Livewire\Volt\{state};
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="card-info">
                                     <h5 class="color-brand-2 mb-15">Sea Forwarding</h5>
-                                    <p class="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                        more than 12 years of experience and have shipped more than 100k shipments.</p>
+                                    <p class="font-sm color-grey-900 mb-35">Sail smoothly through trade routes with sea
+                                        forwarding. Our logistics ensure reliable, cost-effective transport of goods
+                                        across oceans, always on time.</p>
                                     <div class="box-button-offer mb-30"><a
                                             class="btn btn-link font-sm color-brand-2">View Details<span>
                                                 <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
@@ -68,8 +72,9 @@ use function Livewire\Volt\{state};
                                 </div>
                                 <div class="card-info">
                                     <h5 class="color-brand-2 mb-15">Air Freight Forwarding</h5>
-                                    <p class="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                        more than 12 years of experience and have shipped more than 100k shipments.</p>
+                                    <p class="font-sm color-grey-900 mb-35">Navigate global logistics swiftly with air
+                                        forwarding. Elevate supply chain efficiency as we expedite secure, timely
+                                        deliveries through the skies.</p>
                                     <div class="box-button-offer mb-30"><a
                                             class="btn btn-link font-sm color-brand-2">View Details<span>
                                                 <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
@@ -86,9 +91,10 @@ use function Livewire\Volt\{state};
                                         src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/delivery.png"
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="card-info">
-                                    <h5 class="color-brand-2 mb-15">Land Transportation</h5>
-                                    <p class="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                        more than 12 years of experience and have shipped more than 100k shipments.</p>
+                                    <h5 class="color-brand-2 mb-15">Land Forwarding</h5>
+                                    <p class="font-sm color-grey-900 mb-35">Ground your logistics in reliability with
+                                        land forwarding. Whether by road or rail, we ensure seamless movement,
+                                        connecting your business to key destinations.</p>
                                     <div class="box-button-offer mb-30"><a
                                             class="btn btn-link font-sm color-brand-2">View Details<span>
                                                 <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
@@ -102,12 +108,13 @@ use function Livewire\Volt\{state};
                         <div class="swiper-slide wow animate__animated animate__fadeIn">
                             <div class="card-offer hover-up">
                                 <div class="card-image"><img
-                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/delivery.png"
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/warehouse.png"
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="card-info">
-                                    <h5 class="color-brand-2 mb-15">Railway Logistics</h5>
-                                    <p class="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                        more than 12 years of experience and have shipped more than 100k shipments.</p>
+                                    <h5 class="color-brand-2 mb-15">Warehousing & Storage</h5>
+                                    <p class="font-sm color-grey-900 mb-35">Optimize logistics with our warehousing
+                                        solutions. From inventory management to order fulfillment, our facilities
+                                        provide secure foundations, ensuring efficiency and accessibility.</p>
                                     <div class="box-button-offer mb-30"><a
                                             class="btn btn-link font-sm color-brand-2">View Details<span>
                                                 <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"

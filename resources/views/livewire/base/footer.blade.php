@@ -57,11 +57,14 @@ state([
                         more than 15 countries and an international network of partners and agents.
                     </p>
                     <h6 class="color-brand-1">Follow Us</h6>
-                    <div class="mt-15"><a class="icon-socials icon-facebook" href="index.html#"></a><a
-                            class="icon-socials icon-instagram" href="index.html#"></a><a
-                            class="icon-socials icon-twitter" href="index.html#"></a><a
-                            class="icon-socials icon-youtube" href="index.html#"></a><a class="icon-socials icon-skype"
-                            href="index.html#"></a></div>
+                    <div class="mt-15">
+                        <a class="icon-socials icon-facebook" href="#"></a>
+                        <a class="icon-socials icon-instagram" href="#"></a>
+                        <a class="icon-socials icon-twitter" href="#">
+                        </a>
+                        <a class="icon-socials icon-youtube" href="#"></a><a class="icon-socials icon-skype"
+                            href="#"></a>
+                    </div>
                 </div>
                 <div class="col-lg-3 width-16  mb-30">
                     <h5 class="mb-10 color-brand-1">Quick Links</h5>
@@ -76,7 +79,7 @@ state([
                     <h5 class="mb-10 color-brand-1">Our Services</h5>
                     <ul class="menu-footer">
                         @foreach ($solutions as $solution)
-                            <li><a href="/solution/{{ $solution['href'] }}">{{ $solution['title'] }}</a></li>
+                            <li><a href="/our-services">{{ $solution['title'] }}</a></li>
                         @endforeach
                     </ul>
                 </div>

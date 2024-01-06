@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{{ env('STATIC_ASSET_URL', '') }}/static/css/custom.css">
 
     @vite(['resources/js/app.js'])
-
+    {{-- 
     <script defer>
         if ("serviceWorker" in navigator) {
             // window.addEventListener("load", () => {
@@ -38,7 +38,7 @@
                 .catch((err) => console.error(`Service Worker ${err}`));
             // });
         }
-    </script>
+    </script> --}}
 
     {{-- <style>
         .header .main-menu li div.sub-menu.five-col.four-col .menu-col {

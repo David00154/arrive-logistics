@@ -73,15 +73,16 @@
                                     <h6
                                         class="chart-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
                                         Affordable Cost</h6>
-                                    <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">The latest
-                                        design trends meet hand-crafted templates.</p>
+                                    <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">Quality
+                                        without compromise, affordable solutions tailored to your budget.</p>
                                 </div>
                                 <div class="col-lg-6 mb-30">
                                     <h6
                                         class="feature-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
                                         Shot Time Delivery</h6>
-                                    <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">The latest
-                                        design trends meet hand-crafted templates.</p>
+                                    <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">Swift
+                                        solutions for urgent needs, ensuring prompt delivery, meeting deadlines, and
+                                        exceeding expectations.</p>
                                 </div>
                             </div>
                         </div>
@@ -92,18 +93,18 @@
                 <div class="col-lg-6">
                     <div class="box-info-aabout-2"><span
                             class="btn btn-tag wow animate__animated animate__fadeIn">History</span>
-                        <h2 class="color-brand-2 mt-15 mb-25 wow animate__animated animate__fadeIn">Globally Connected
-                            by Large Network</h2>
-                        <p class="font-md color-grey-900 mb-20 wow animate__animated animate__fadeIn">Logistic Transp
-                            was founded in 2005 by a group of transportation professionals who saw an opportunity to
-                            provide a better level of service to businesses. Since our founding, we have grown to become
-                            a leading transportation provider, with a presence in over 30 countries around the world.
+                        <h2 class="color-brand-2 mt-15 mb-25 wow animate__animated animate__fadeIn">Our Legacy in
+                            Logistics</h2>
+                        <p class="font-md color-grey-900 mb-20 wow animate__animated animate__fadeIn">Explore the rich
+                            history that has shaped our legacy in the world of logistics. From humble beginnings to
+                            industry leadership, follow our journey through milestones and innovations that define our
+                            commitment to excellence over the years.
                         </p>
                         <div class="box-button mt-40"><a
                                 class="btn btn-brand-2 mr-20 wow animate__animated animate__fadeIn"
-                                href="contact.html">Contact Us</a><a
+                                href="{{ route('contact-us') }}">Contact Us</a><a
                                 class="btn btn-link-medium wow animate__animated animate__fadeIn"
-                                href="about.html#">Learn More
+                                href="{{ route('about') }}">Learn More
                                 <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor"
                                     viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -111,9 +112,11 @@
                                 </svg></a></div>
                     </div>
                 </div>
-                <div class="col-lg-6"><img class="wow animate__animated animate__fadeIn"
+                <div class="col-lg-6">
+                    <img class="wow animate__animated animate__fadeIn"
                         src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/about/img-about-2-2.png"
-                        alt="{{ config('app.name') }}"></div>
+                        alt="{{ config('app.name') }}">
+                </div>
             </div>
             <div class="row align-items-center item-about-2">
                 <div class="col-lg-6"><img class="wow animate__animated animate__fadeIn"
@@ -129,12 +132,125 @@
                             solutions to the market. Our 30 years’ experience in the shipping, transport and logistics
                             industry is our strength, which support us to deliver our promises to our customers.</p>
                         <div class="box-button d-flex mt-40"><a
-                                class="hover-up mr-10 wow animate__animated animate__fadeIn" href="about.html#"><img
+                                class="hover-up mr-10 wow animate__animated animate__fadeIn" href="#"><img
                                     src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
                                     alt="{{ config('app.name') }}"></a><a
-                                class="hover-up wow animate__animated animate__fadeIn" href="about.html#"><img
+                                class="hover-up wow animate__animated animate__fadeIn" href="#"><img
                                     src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
                                     alt="{{ config('app.name') }}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Why choose us --}}
+    <section class="section mt-85 pt-110 bg-info-4">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Global Shipping Partner To
+                    World’s<br class="d-none d-lg-block">Famous Companies</h2>
+            </div>
+            <div class="box-why-choose-us-2 mt-50">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 mb-30">
+                        <div class="box-info-pround"><span
+                                class="btn btn-tag color-grey-900 wow animate__animated animate__fadeIn">Our
+                                Features</span>
+                            <h2 class="color-brand-2 mb-15 mt-20 wow animate__animated animate__fadeIn">Why choose us
+                            </h2>
+                            <p class="font-md color-grey-900 wow animate__animated animate__fadeIn">Over the years, we
+                                have worked together to expand our network of partners to deliver reliability and
+                                consistency. We’ve also made significant strides to tightly integrate technology with
+                                our processes, giving our clients greater visibility into every engagement.</p>
+                            <div class="mt-30">
+                                <ul class="list-ticks list-ticks-3">
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Reliable and Timely Deliveries</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Advanced Tracking Systems</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Cost-Effective Shipping Options</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Commitment to Sustainability</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Exceptional Customer Service</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">International Shipping Expertise</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Flexibility and Customization</h6>
+                                    </li>
+                                    <li class="wow animate__animated animate__fadeIn">
+                                        <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                            viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        <h6 class="color-brand-2">Insurance and Liability Coverage</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-30 text-start">
+                                <a class="btn btn-brand-2 mr-20 wow animate__animated animate__fadeIn"
+                                    href="{{ route('contact-us') }}">Contact Us</a>
+                                <a class="btn btn-link-medium wow animate__animated animate__fadeIn"
+                                    href="{{ route('about') }}">Learn More
+                                    <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 mb-30">
+                        <div class="box-images-info-4">
+                            <div class="box-images-inner">
+                                <img class="img-main"
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage2/img-info-4.png"
+                                    alt="transp">
+                            </div>
                         </div>
                     </div>
                 </div>

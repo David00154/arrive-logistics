@@ -63,31 +63,32 @@
                             Are?</span>
                         <h2 class="color-grey-900 mb-30 mt-20 wow animate__animated animate__fadeIn">Globally Connected
                             by Large Network</h2>
-                        <p class="font-md color-grey-900 mb-40 wow animate__animated animate__fadeIn">We strive to
-                            become pioneers in the field, providing first quality and cost-effective service, and smart
-                            solutions to the market. Our 30 years’ experience in the shipping, transport and logistics
-                            industry is our strength, which support us to deliver our promises to our customers.</p>
+                        <p class="font-md color-grey-900 mb-40 wow animate__animated animate__fadeIn">At the heart of
+                            our identity is a commitment to being globally connected by a large logistics network. We
+                            seamlessly link businesses across borders, providing reliable and efficient solutions that
+                            transcend geographical boundaries. Explore a world of interconnected logistics with us.</p>
                         <div class="row">
                             <div class="col-lg-6 mb-30">
                                 <h6
                                     class="chart-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
                                     Trachking Moving</h6>
-                                <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">The latest
-                                    design trends meet hand-crafted templates.</p>
+                                <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">Experience
+                                    seamless real-time shipment monitoring, a cornerstone of our global logistics
+                                    excellence</p>
                             </div>
                             <div class="col-lg-6 mb-30">
                                 <h6
                                     class="support-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
                                     24/7 Support</h6>
-                                <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">The latest
-                                    design trends meet hand-crafted templates.</p>
+                                <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">Our commitment
+                                    to uninterrupted assistance ensures your logistics success, globally connected.</p>
                             </div>
                         </div>
                         <div class="d-flex mt-20"><a class="mr-10 wow animate__animated animate__fadeIn"
-                                href="index-4.html#"><img
+                                href="#/"><img
                                     src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
                                     alt="{{ config('app.name') }}"></a><a class="wow animate__animated animate__fadeIn"
-                                href="index-4.html#"><img
+                                href="#/"><img
                                     src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
                                     alt="{{ config('app.name') }}"></a></div>
                     </div>
@@ -171,8 +172,8 @@
     {{-- Delivering results for industry leaders --}}
     <section class="section mt-85">
         <div class="container">
-            <div class="text-center"><img class="mb-15"
-                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/favicon.svg"
+            <div class="text-center">
+                <img class="mb-15" src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/favicon.svg"
                     alt="{{ config('app.name') }}">
                 <p class="font-md color-grey-700 wow animate__animated animate__fadeIn">Delivering Results for Industry
                     Leaders</p>
@@ -250,12 +251,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="mt-30 text-start d-flex wow animate__animated animate__fadeIn"><a
-                                class="hover-up mr-10" href="index.html#"><img
-                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
-                                    alt="{{ config('app.name') }}"></a><a class="hover-up" href="index.html#"><img
-                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
-                                    alt="{{ config('app.name') }}"></a></div>
+                        <div class="mt-30 text-start d-flex wow animate__animated animate__fadeIn">
+                            <a class="hover-up mr-10" href="#/">
+                                <img src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/appstore-btn.png"
+                                    alt="{{ config('app.name') }}">
+                            </a>
+                            <a class="hover-up" href="#/">
+                                <img src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/google-play-btn.png"
+                                    alt="{{ config('app.name') }}">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,29 +274,26 @@
                         touch</span>
                     <h3 class="color-grey-900 mb-20 mt-15 wow animate__animated animate__fadeIn">Proud to Deliver<br
                             class="d-none d-lg-block">Excellence Every Time</h3>
-                    <p class="font-md color-grey-900 mb-40 wow animate__animated animate__fadeIn">Excepteur sint
-                        occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus
-                        nulla.
-                        Interactively transform magnetic growth strategies whereas prospective "outside the box"
-                        thinking.</p>
+                    <p class="font-md color-grey-900 mb-40 wow animate__animated animate__fadeIn">Rooted in a profound
+                        commitment, our ethos revolves around consistently delivering unparalleled logistics service.
+                        With unwavering pride, we strive to exceed expectations, ensuring a seamless and reliable
+                        experience for our clients on every occasion.</p>
                     <div class="row">
                         <div class="col-lg-6 mb-30">
                             <h6 class="chart-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
                                 Boost your
                                 sale</h6>
-                            <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">The latest design
-                                trends meet
-                                hand-crafted templates.</p>
+                            <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">Maximize revenue
+                                and boost success with our tailored strategies and proven methodologies.</p>
                         </div>
                         <div class="col-lg-6 mb-30">
                             <h6
                                 class="feature-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
                                 Introducing
                                 New Features</h6>
-                            <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">The latest design
-                                trends meet
-                                hand-crafted templates.</p>
+                            <p class="font-xs color-grey-900 wow animate__animated animate__fadeIn">Discover innovation
+                                through enhanced features for a cutting-edge experience. Stay ahead with our updates.
+                            </p>
                         </div>
                     </div>
                     <div class="mt-20"><a class="btn btn-brand-2 mr-20 wow animate__animated animate__fadeIn"
@@ -310,6 +312,155 @@
         </div>
         <div class="box-image-touch"></div>
     </section>
+    {{-- Why choose us --}}
+    <section class="section pt-110 pb-110">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-6">
+                            <div class="item-reason wow animate__animated animate__fadeIn">
+                                <div class="card-offer cardServiceStyle3 hover-up">
+                                    <div class="card-image"><img
+                                            src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage4/container.png"
+                                            alt="{{ config('app.name') }}"></div>
+                                    <div class="card-info">
+                                        <h5 class="color-brand-2 mb-15">Shipping Options</h5>
+                                        <p class="font-sm color-grey-900">Choose from a range of tailored solutions to
+                                            match your unique shipping requirements, ensuring flexibility and precision.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-reason wow animate__animated animate__fadeIn">
+                                <div class="card-offer cardServiceStyle3 hover-up">
+                                    <div class="card-image"><img
+                                            src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage4/24-hours.png"
+                                            alt="{{ config('app.name') }}"></div>
+                                    <div class="card-info">
+                                        <h5 class="color-brand-2 mb-15">Customer Service</h5>
+                                        <p class="font-sm color-grey-900">Our dedicated team is committed to
+                                            exceptional support. Your satisfaction is our priority; we aim to exceed
+                                            expectations at every interaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-6">
+                            <div class="item-reason mt-30 wow animate__animated animate__fadeIn">
+                                <div class="card-offer cardServiceStyle3 hover-up">
+                                    <div class="card-image"><img
+                                            src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage4/stopwatch.png"
+                                            alt="{{ config('app.name') }}"></div>
+                                    <div class="card-info">
+                                        <h5 class="color-brand-2 mb-15">Timely Deliveries</h5>
+                                        <p class="font-sm color-grey-900">We ensure punctual shipments every time
+                                            through our reliable and efficient delivery network.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-reason wow animate__animated animate__fadeIn">
+                                <div class="card-offer cardServiceStyle3 hover-up">
+                                    <div class="card-image"><img
+                                            src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage4/pallet.png"
+                                            alt="{{ config('app.name') }}"></div>
+                                    <div class="card-info">
+                                        <h5 class="color-brand-2 mb-15">Tracking Systems</h5>
+                                        <p class="font-sm color-grey-900">Enjoy peace of mind with our real-time
+                                            tracking, ensuring transparency and confidence. Choose a partner that
+                                            prioritizes your unique needs – choose us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box-info-pround box-whychooseus-3">
+                        <span class="btn btn-tag color-grey-900 wow animate__animated animate__fadeIn">Our
+                            Features</span>
+                        <h2 class="color-brand-2 mb-15 mt-20 wow animate__animated animate__fadeIn">Why choose us</h2>
+                        <p class="font-md color-grey-900">Elevate your experience with our unmatched commitment to
+                            excellence. From seamless logistics solutions to personalized service, we prioritize your
+                            success. Trust in our reliability, innovation, and customer-centric approach for a
+                            partnership that exceeds expectations. Choose confidence, choose us.</p>
+                        <div class="mt-30">
+                            <ul class="list-ticks">
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Reliable and Timely Deliveries
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Advanced Tracking Systems
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Cost-Effective Shipping Options
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Commitment to Sustainability
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Exceptional Customer Service
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>International Shipping Expertise
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Flexibility and Customization
+                                </li>
+                                <li class="wow animate__animated animate__fadeIn">
+                                    <svg class="w-6 h-6 icon-16" fill="none" stroke="currentColor"
+                                        viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>Insurance and Liability Coverage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-30 text-start">
+                            <a class="btn btn-brand-2 mr-20 wow animate__animated animate__fadeIn"
+                                href="{{ route('contact-us') }}">Contact Us</a>
+                            <a class="btn btn-link-medium wow animate__animated animate__fadeIn"
+                                href="{{ route('about') }}">Learn More
+                                <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor"
+                                    viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {{-- World's leading companies for over 80 years --}}
     <section class="section bg-leading-company pt-95">
         <div class="box-bg-leading"></div>
@@ -317,11 +468,17 @@
             <div class="text-center mb-45">
                 <h2 class="color-brand-1 mb-15 wow animate__animated animate__fadeIn">World’s Leading Companies<br
                         class="d-none d-lg-block">For Over 80 Years.</h2>
-                <p class="font-md color-white wow animate__animated animate__fadeIn">A big opportunity for your
+                <p class="font-md color-white wow animate__animated animate__fadeIn">
+                    Unrivaled for over 80 years, we stand as the trusted choice for leading companies globally. Our
+                    legacy <br class="d-none d-lg-block"> of excellence continues to define industry standards and
+                    shape success across diverse
+                    sectors.
+                    {{-- A big opportunity for your
                     business
                     growth. Delivering Results for Industry Leaders. We are<br class="d-none d-lg-block">proud of our
                     workfor
-                    and have worked hard.</p>
+                    and have worked hard. --}}
+                </p>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
@@ -506,11 +663,12 @@
                 <div class="get-quote-left">
                     <p class="font-3xl color-white mb-10 wow animate__animated animate__fadeIn">Have any ideas in your
                         mind?</p>
-                    <h2 class="color-brand-1 wow animate__animated animate__fadeIn">Create your next Project with Us
+                    <h2 class="color-brand-1 wow animate__animated animate__fadeIn">Get a quote for your tailored
+                        solutions.
                     </h2>
                 </div>
                 <div class="get-quote-right"><a class="btn btn-get-quote wow animate__animated animate__fadeIn"
-                        href="request-a-quote.html">
+                        href="{{ route('get-quote') }}">
                         <svg class="mr-10" fill="none" stroke="currentColor" stroke-width="1.5"
                             viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -521,105 +679,131 @@
         </div>
     </section>
     {{-- Testimonials --}}
-    <section class="section pt-60 pb-65 mt-50">
+    <section class="section mt-50">
         <div class="container">
-            <div class="bg-testimonial-3">
-                <div class="row align-items-start">
-                    <div class="col-xl-4 col-lg-12 mb-30">
-                        <h2 class="title-favicon-2 color-white mb-10 wow animate__animated animate__fadeIn">
-                            Testimonials</h2>
-                        <p class="font-md color-white mb-30 wow animate__animated animate__fadeIn">Hear from our users
-                            who have
-                            saved thousands on their Startup and SaaS solution spend. Quo nostrum praesentium At ratione
-                            iusto qui
-                            labore nesciunt ad architecto dolor est odio molestias non molestiae incidunt in praesentium
-                            odit.</p>
-                        <div class="mt-20"><a class="btn btn-brand-1-big mr-20 wow animate__animated animate__fadeIn"
-                                href="contact.html">Contact Us</a><a
-                                class="btn btn-link-medium btn-link-white wow animate__animated animate__fadeIn"
-                                href="index-3.html#">Learn More
-                                <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor"
-                                    viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3">
-                                    </path>
-                                </svg></a></div>
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8">
+                    <h2
+                        class="title-favicon color-brand-2 mb-20 title-padding-left wow animate__animated animate__fadeIn">
+                        Testimonials</h2>
+                    <p class="font-lg color-brand-2 pl-55 wow animate__animated animate__fadeIn">Hear from our users
+                        who have saved thousands on their<br class="d-none d-lg-block">Startup and SaaS solution spend.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-end">
+                    <div class="box-button-sliders">
+                        <div
+                            class="swiper-button-prev swiper-button-prev-style-1 swiper-button-prev-customers wow animate__animated animate__fadeIn">
+                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+                            </svg>
+                        </div>
+                        <div
+                            class="swiper-button-next swiper-button-next-style-1 swiper-button-next-customers wow animate__animated animate__fadeIn">
+                            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="col-xl-8 col-lg-12 mb-30">
-                        <div class="row align-items-start">
-                            <div class="col-lg-6 position-relative wow animate__animated animate__fadeIn">
-                                <div class="box-testimonial-3-left">
-                                    <div class="mb-30">
-                                        <div class="card-testimonial-grid card-testimonial-3">
-                                            <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
-                                                        alt="{{ config('app.name') }}"></a>
-                                                <div class="author-info"><a href="index-3.html#"><span
-                                                            class="font-xl-bold color-brand-2 author-name">Guy
-                                                            Hawkins</span></a><span
-                                                        class="font-sm color-grey-500 department">Bank of
-                                                        America</span></div>
-                                            </div>
-                                            <p class="font-sm color-grey-700">Access the same project through five
-                                                different dynamic views:
-                                                a kanban board, Gantt chart, spreadsheet, calendar or simple task list.
-                                            </p>
-                                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-slide-customers overflow-hidden mt-50">
+            <div class="box-slide-customers-2">
+                <div class="box-swiper">
+                    <div class="swiper-container swiper-group-4-customers pb-50">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide wow animate__animated animate__fadeIn">
+                                <div class="card-testimonial-grid">
+                                    <div class="box-author mb-25">
+                                        <a href="#/"><img
+                                                src="https://stockgloballogistics.com/wp-content/uploads/2020/10/Andy-Profile-600-400x400-1-150x150.png"
+                                                alt="transp"></a>
+                                        <div class="author-info"><a href="#/"><span
+                                                    class="font-xl-bold color-brand-2 author-name">Alex Douglas
+                                                </span></a><span class="font-sm color-grey-500 department">From
+                                                USA</span></div>
                                     </div>
-                                    <div class="mb-30">
-                                        <div class="card-testimonial-grid card-testimonial-3">
-                                            <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
-                                                        alt="{{ config('app.name') }}"></a>
-                                                <div class="author-info"><a href="index-3.html#"><span
-                                                            class="font-xl-bold color-brand-2 author-name">Guy
-                                                            Hawkins</span></a><span
-                                                        class="font-sm color-grey-500 department">Bank of
-                                                        America</span></div>
-                                            </div>
-                                            <p class="font-sm color-grey-700">Access the same project through five
-                                                different dynamic views:
-                                                a kanban board, Gantt chart, spreadsheet, calendar or simple task list.
-                                            </p>
-                                        </div>
+                                    <p class="font-md color-grey-700">These guys are just the coolest logistics company
+                                        ever! They exceptionally handled our complex road freight services.</p>
+                                    <div class="card-bottom-info justify-content-between">
+                                        <div class="rating text-start">
+                                            <img src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp">
+                                            <img src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><br><span class="font-sm color-white">For customer
+                                                support</span>
+                                        </div><span class="font-xs color-grey-500 rate-post text-end">Rate: 4.95 /
+                                            5</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 position-relative wow animate__animated animate__fadeIn">
-                                <div class="box-testimonial-3-right">
-                                    <div class="mb-30">
-                                        <div class="card-testimonial-grid card-testimonial-3">
-                                            <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
-                                                        alt="{{ config('app.name') }}"></a>
-                                                <div class="author-info"><a href="index-3.html#"><span
-                                                            class="font-xl-bold color-brand-2 author-name">Guy
-                                                            Hawkins</span></a><span
-                                                        class="font-sm color-grey-500 department">Bank of
-                                                        America</span></div>
-                                            </div>
-                                            <p class="font-sm color-grey-700">Access the same project through five
-                                                different dynamic views:
-                                                a kanban board, Gantt chart, spreadsheet, calendar or simple task list.
-                                            </p>
-                                        </div>
+                            <div class="swiper-slide wow animate__animated animate__fadeIn">
+                                <div class="card-testimonial-grid">
+                                    <div class="box-author mb-25"><a href="#/"><img
+                                                src="https://stockgloballogistics.com/wp-content/uploads/2020/10/testimonial-edward-150x150.png"
+                                                alt="transp"></a>
+                                        <div class="author-info"><a href="#/"><span
+                                                    class="font-xl-bold color-brand-2 author-name">Aladino Schiavone
+                                                </span></a><span class="font-sm color-grey-500 department">From
+                                                Italy</span></div>
                                     </div>
-                                    <div class="mb-30">
-                                        <div class="card-testimonial-grid card-testimonial-3">
-                                            <div class="box-author mb-25"><a href="index-3.html#"><img
-                                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/author.png"
-                                                        alt="{{ config('app.name') }}"></a>
-                                                <div class="author-info"><a href="index-3.html#"><span
-                                                            class="font-xl-bold color-brand-2 author-name">Guy
-                                                            Hawkins</span></a><span
-                                                        class="font-sm color-grey-500 department">Bank of
-                                                        America</span></div>
-                                            </div>
-                                            <p class="font-sm color-grey-700">Access the same project through five
-                                                different dynamic views:
-                                                a kanban board, Gantt chart, spreadsheet, calendar or simple task list.
-                                            </p>
-                                        </div>
+                                    <p class="font-md color-grey-700">Their performance on our project was extremely
+                                        successful. As a result of this collaboration, the project was built with
+                                        exceptional quality & delivered.</p>
+                                    <div class="card-bottom-info justify-content-between">
+                                        <div class="rating text-start"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><br><span class="font-sm color-white">For customer
+                                                support</span></div><span
+                                            class="font-xs color-grey-500 rate-post text-end">Rate: 4.95 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide wow animate__animated animate__fadeIn">
+                                <div class="card-testimonial-grid">
+                                    <div class="box-author mb-25"><a href="#/"><img
+                                                src="https://stockgloballogistics.com/wp-content/uploads/2020/10/unnamed-150x150.png"
+                                                alt="transp"></a>
+                                        <div class="author-info"><a href="#/"><span
+                                                    class="font-xl-bold color-brand-2 author-name">Isabela Ferreira
+                                                </span></a><span class="font-sm color-grey-500 department">From
+                                                Spain</span></div>
+                                    </div>
+                                    <p class="font-md color-grey-700">The shipping process with this crew was a
+                                        pleasurable experience! They did all in time and with no safety incidents.</p>
+                                    <div class="card-bottom-info justify-content-between">
+                                        <div class="rating text-start"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><img
+                                                src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/template/icons/star.svg"
+                                                alt="transp"><br><span class="font-sm color-white">For customer
+                                                support</span></div><span
+                                            class="font-xs color-grey-500 rate-post text-end">Rate: 4.95 / 5</span>
                                     </div>
                                 </div>
                             </div>
@@ -629,6 +813,7 @@
             </div>
         </div>
     </section>
+    {{-- Faqs --}}
     <section class="section pt-80 mb-70 bg-faqs">
         <div class="container">
             <div class="row">
@@ -661,19 +846,15 @@
                                 <h5 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button text-heading-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">How can I return
-                                        an item purchased online?</button>
+                                        aria-controls="collapseTwo">What Is Logistics Management?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse show" id="collapseTwo"
                                     aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Contrary to popular belief, Lorem Ipsum is not simply
-                                        random text. It
-                                        has roots in a piece of classical Latin literature Id pro doctus mediocrem
-                                        erroribus, diam nostro
-                                        sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his,
-                                        pri cu epicuri
-                                        perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex
-                                        illum officiis id.
+                                    <div class="accordion-body">Logistics management is a function where a company
+                                        usually consisting of various shipping and distribution professionals
+                                        provide services to analyze a company’s supply chain, offer carrier and
+                                        service options, and provide continued management of all or some areas of a
+                                        customer’s transportation needs.
                                     </div>
                                 </div>
                             </div>
@@ -681,91 +862,76 @@
                                 <h5 class="accordion-header" id="headingThree">
                                     <button class="accordion-button text-heading-5 collapsed text-heading-5 type="
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">Can I cancel or change my
-                                        order?</button>
+                                        aria-expanded="false" aria-controls="collapseThree">Does It Cost Anything To
+                                        Do A Full Analysis Of Our Supply Chain Services?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseThree"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Aut architecto consequatur sit error nemo sed dolorum
-                                        suscipit 33
-                                        impedit dignissimos ut velit blanditiis qui quos magni id dolore dignissimos.
-                                        Sit ipsa consectetur
-                                        et sint harum et dicta consequuntur id cupiditate perferendis qui quisquam enim.
-                                        Vel autem illo id
-                                        error excepturi est dolorum voluptas qui maxime consequatur et culpa quibusdam
-                                        in iusto vero sit
-                                        amet Quis.</div>
+                                    <div class="accordion-body">No, we do not charge for our initial analysis. There is
+                                        absolutely nothing to lose by having our expert logistics professionals review
+                                        your shipping and distribution spend and profile. In most cases we are
+                                        compensated by our providers should you utilize our services.</div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
                                 <h5 class="accordion-header" id="headingFour">
                                     <button class="accordion-button text-heading-5 collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">I have
-                                        promotional or discount code?</button>
+                                        aria-expanded="false" aria-controls="collapseFour">What Modes And Services
+                                        Does {{ env('APP_NAME') }} Provide?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseFour"
                                     aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Eos nostrum aperiam ab enim quas sit voluptate fuga. Ea
-                                        aperiam voluptas
-                                        a accusantium similique 33 alias sapiente non vitae repellat et dolorum omnis
-                                        eos beatae
-                                        praesentium id sunt corporis. Aut nisi blanditiis aut corrupti quae et
-                                        accusantium doloribus sed
-                                        tempore libero a dolorum beatae.</div>
+                                    <div class="accordion-body">We offer services for international and domestic
+                                        freight, LCL shipping, FCL shipping solutions, freight and parcel audit and
+                                        reporting, and overall supply chain management.</div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
                                 <h5 class="accordion-header" id="headingFive">
                                     <button class="accordion-button text-heading-5 collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive">What are the
-                                        delivery types you use?</button>
+                                        aria-expanded="false" aria-controls="collapseFive">I Am A Small Start-Up, Can
+                                        {{ env('APP_NAME') }} Help Me?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseFive"
                                     aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Et beatae quae ex minima porro aut nihil quia sed optio
-                                        dignissimos et
-                                        voluptates deleniti et nesciunt veritatis et suscipit quod. Est sint voluptate
-                                        id unde nesciunt
-                                        non deleniti debitis. Ut dolores tempore vel placeat nemo quo enim reprehenderit
-                                        eos corrupti
-                                        maiores et minima quaerat. Quo sequi eaque eum similique sint et autem
-                                        perspiciatis cum Quis
-                                        exercitationem quo quos excepturi non ducimus ducimus eos natus velit.</div>
+                                    <div class="accordion-body">Yes, we love working with small and emerging companies.
+                                        {{ env('APP_NAME') }} provides the expertise and support to help your company
+                                        scale.</div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
-                                <h5 class="accordion-header" id="headingSix">
+                                <h5 class="accordion-header" style="text-transform: capitalize !important;"
+                                    id="headingSix">
                                     <button class="accordion-button text-heading-5 collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-                                        aria-controls="collapseSix">How can I pay for
-                                        my purchases?</button>
+                                        aria-controls="collapseSix">What Size Shipments Can You Handle?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseSix"
                                     aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Qui quas itaque ut molestias culpa vel culpa voluptas
-                                        eos fugit sint ex
-                                        veritatis totam cum unde maxime! Qui eius fugiat qui veritatis cumque a nesciunt
-                                        nemo. Id numquam
-                                        rerum est molestiae quia ut nisi architecto a officiis itaque eum quod repellat
-                                        ut dolorem dolorem
-                                        aut ipsam ipsa.</div>
+                                    <div class="accordion-body">Pretty much any size you have! We can handle individual
+                                        cartons, palletized items, and large, bulky items up to 20,000 lbs per
+                                        piece-plus everything in between. Our terminals are equipped for
+                                        flatrack/flatbed loading and oversized freight. We can accommodate special
+                                        freight needs by utilizing equipment rentals.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="line-border mt-50 mb-50"></div>
                         <h3 class="color-brand-2 wow animate__animated animate__fadeIn">Nead more help?</h3>
-                        <div class="mt-20"><a class="btn btn-brand-1-big mr-20 wow animate__animated animate__fadeIn"
-                                href="contact.html">Contact Us</a><a
-                                class="btn btn-link-medium wow animate__animated animate__fadeIn"
-                                href="index-3.html#">Learn More
+                        <div class="mt-20">
+                            <a class="btn btn-brand-1-big mr-20 wow animate__animated animate__fadeIn"
+                                href="{{ route('contact-us') }}">Contact Us</a>
+                            <a class="btn btn-link-medium wow animate__animated animate__fadeIn"
+                                href="{{ route('about') }}">Learn More
                                 <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor"
                                     viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M14 5l7 7m0 0l-7 7m7-7H3">
                                     </path>
-                                </svg></a></div>
+                                </svg></a>
+                        </div>
                     </div>
                 </div>
             </div>

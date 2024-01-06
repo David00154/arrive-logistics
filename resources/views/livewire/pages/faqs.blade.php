@@ -106,17 +106,19 @@ title('FAQ');
                     <div class="box-faqs-left">
                         <h2 class="title-favicon mb-20 wow animate__animated animate__fadeIn">FAQs</h2>
                         <p class="font-md color-grey-700 mb-50 wow animate__animated animate__fadeIn">Feeling
-                            inquisitive? Have a read through some of our FAQs or contact our supporters for help</p>
+                            inquisitive? Have a
+                            read through some of our FAQs or contact our supporters for help</p>
                         <div class="box-gallery-faqs">
-                            <div class="image-top wow animate__animated animate__fadeIn"><img
-                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/trackyourparcel/img-faqs1.png"
-                                    alt="{{ config('app.name') }}"></div>
-                            <div class="image-bottom wow animate__animated animate__fadeIn">
+                            <div class="image-top"><img
+                                    src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img-faq1.png"
+                                    alt="{{ config('app.name') }}">
+                            </div>
+                            <div class="image-bottom">
                                 <div class="image-faq-1"><img
-                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/trackyourparcel/img-faqs2.png"
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img-faq2.png"
                                         alt="{{ config('app.name') }}"></div>
                                 <div class="image-faq-2"><img
-                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/trackyourparcel/img-faqs3.png"
+                                        src="{{ env('STATIC_ASSET_URL', '') }}/static/imgs/page/homepage1/img-faq3.png"
                                         alt="{{ config('app.name') }}"></div>
                             </div>
                         </div>
@@ -129,77 +131,75 @@ title('FAQ');
                                 <h5 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button text-heading-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">How can I return an item purchased online?</button>
+                                        aria-controls="collapseTwo">What Is Logistics Management?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse show" id="collapseTwo"
                                     aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Contrary to popular belief, Lorem Ipsum is not simply
-                                        random text. It has roots in a piece of classical Latin literature Id pro doctus
-                                        mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo.
-                                        Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas
-                                        omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.</div>
+                                    <div class="accordion-body">Logistics management is a function where a company
+                                        usually consisting of various shipping and distribution professionals
+                                        provide services to analyze a company’s supply chain, offer carrier and
+                                        service options, and provide continued management of all or some areas of a
+                                        customer’s transportation needs.
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
                                 <h5 class="accordion-header" id="headingThree">
                                     <button class="accordion-button text-heading-5 collapsed text-heading-5 type="
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">Can I cancel or change my order?</button>
+                                        aria-controls="collapseThree">Does It Cost Anything To
+                                        Do A Full Analysis Of Our Supply Chain Services?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseThree"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Aut architecto consequatur sit error nemo sed dolorum
-                                        suscipit 33 impedit dignissimos ut velit blanditiis qui quos magni id dolore
-                                        dignissimos. Sit ipsa consectetur et sint harum et dicta consequuntur id
-                                        cupiditate perferendis qui quisquam enim. Vel autem illo id error excepturi est
-                                        dolorum voluptas qui maxime consequatur et culpa quibusdam in iusto vero sit
-                                        amet Quis.</div>
+                                    <div class="accordion-body">No, we do not charge for our initial analysis. There is
+                                        absolutely nothing to lose by having our expert logistics professionals review
+                                        your shipping and distribution spend and profile. In most cases we are
+                                        compensated by our providers should you utilize our services.</div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
                                 <h5 class="accordion-header" id="headingFour">
                                     <button class="accordion-button text-heading-5 collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">I have promotional or discount code?</button>
+                                        aria-controls="collapseFour">What Modes And Services
+                                        Does {{ env('APP_NAME') }} Provide?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Eos nostrum aperiam ab enim quas sit voluptate fuga. Ea
-                                        aperiam voluptas a accusantium similique 33 alias sapiente non vitae repellat et
-                                        dolorum omnis eos beatae praesentium id sunt corporis. Aut nisi blanditiis aut
-                                        corrupti quae et accusantium doloribus sed tempore libero a dolorum beatae.
-                                    </div>
+                                    <div class="accordion-body">We offer services for international and domestic
+                                        freight, LCL shipping, FCL shipping solutions, freight and parcel audit and
+                                        reporting, and overall supply chain management.</div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
                                 <h5 class="accordion-header" id="headingFive">
                                     <button class="accordion-button text-heading-5 collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive">What are the delivery types
-                                        you use?</button>
+                                        aria-expanded="false" aria-controls="collapseFive">I Am A Small Start-Up, Can
+                                        {{ env('APP_NAME') }} Help Me?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseFive"
                                     aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Et beatae quae ex minima porro aut nihil quia sed optio
-                                        dignissimos et voluptates deleniti et nesciunt veritatis et suscipit quod. Est
-                                        sint voluptate id unde nesciunt non deleniti debitis. Ut dolores tempore vel
-                                        placeat nemo quo enim reprehenderit eos corrupti maiores et minima quaerat. Quo
-                                        sequi eaque eum similique sint et autem perspiciatis cum Quis exercitationem quo
-                                        quos excepturi non ducimus ducimus eos natus velit.</div>
+                                    <div class="accordion-body">Yes, we love working with small and emerging companies.
+                                        {{ env('APP_NAME') }} provides the expertise and support to help your company
+                                        scale.</div>
                                 </div>
                             </div>
                             <div class="accordion-item wow animate__animated animate__fadeIn">
-                                <h5 class="accordion-header" id="headingSix">
+                                <h5 class="accordion-header" style="text-transform: capitalize !important;"
+                                    id="headingSix">
                                     <button class="accordion-button text-heading-5 collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-                                        aria-controls="collapseSix">How can I pay for my purchases?</button>
+                                        aria-controls="collapseSix">What Size Shipments Can You Handle?</button>
                                 </h5>
                                 <div class="accordion-collapse collapse" id="collapseSix"
                                     aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
-                                    <div class="accordion-body">Qui quas itaque ut molestias culpa vel culpa voluptas
-                                        eos fugit sint ex veritatis totam cum unde maxime! Qui eius fugiat qui veritatis
-                                        cumque a nesciunt nemo. Id numquam rerum est molestiae quia ut nisi architecto a
-                                        officiis itaque eum quod repellat ut dolorem dolorem aut ipsam ipsa.</div>
+                                    <div class="accordion-body">Pretty much any size you have! We can handle individual
+                                        cartons, palletized items, and large, bulky items up to 20,000 lbs per
+                                        piece-plus everything in between. Our terminals are equipped for
+                                        flatrack/flatbed loading and oversized freight. We can accommodate special
+                                        freight needs by utilizing equipment rentals.</div>
                                 </div>
                             </div>
                         </div>
@@ -207,13 +207,14 @@ title('FAQ');
                         <h3 class="color-brand-2 wow animate__animated animate__fadeIn">Nead more help?</h3>
                         <div class="mt-20">
                             <a class="btn btn-brand-1-big mr-20 wow animate__animated animate__fadeIn"
-                                href="{{ route('contact-us') }}">Contact Us</a><a
-                                class="btn btn-link-medium wow animate__animated animate__fadeIn"
-                                href="{{ route('faq') }}">Learn More
+                                href="{{ route('contact-us') }}">Contact Us</a>
+                            <a class="btn btn-link-medium wow animate__animated animate__fadeIn"
+                                href="{{ route('about') }}">Learn More
                                 <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor"
                                     viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                    </path>
                                 </svg></a>
                         </div>
                     </div>
