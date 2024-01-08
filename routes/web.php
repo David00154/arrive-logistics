@@ -29,12 +29,13 @@ Route::get("/contact-us", ContactUs::class)->name("contact-us");
 // });
 Route::view("our-services", "services");
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Route::view('dashboard', 'dashboard')
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
 
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
+// Route::view('profile', 'profile')
+//     ->middleware(['auth'])
+//     ->name('profile');
 
 require __DIR__ . '/auth.php';
+require __DIR__ . '/admin.php';
