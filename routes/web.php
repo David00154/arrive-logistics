@@ -29,10 +29,6 @@ Route::get("/contact-us", ContactUs::class)->name("contact-us");
 // });
 Route::view("our-services", "services");
 
-// Route::view('dashboard', 'dashboard')
-//     ->middleware(['auth', 'verified'])
-//     ->name('dashboard');
-
 // Route::view('profile', 'profile')
 //     ->middleware(['auth'])
 //     ->name('profile');

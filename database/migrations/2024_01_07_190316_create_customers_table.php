@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->string('email');
             $table->string('phone');
             $table->string('address');
-            $table->string('message');
+            $table->string("solution");
             $table->string('tracking_id')->unique()->nullable(true);
             $table->timestamp('delivery_date')->nullable();
             $table->timestamp('estimated_delivery_time')->nullable();

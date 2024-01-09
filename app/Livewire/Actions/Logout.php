@@ -2,10 +2,11 @@
 
 namespace App\Livewire\Actions;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
-class Logout
+class Logout extends Controller
 {
     /**
      * Log the current user out of the application.

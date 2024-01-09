@@ -2,10 +2,12 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Customer;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Rule;
 use Livewire\Attributes\Title;
 use Livewire\Component;
+use Illuminate\Support\Str;
 
 
 class GetQuote extends Component
@@ -31,20 +33,28 @@ class GetQuote extends Component
     #[Rule("required|min:12")]
     public string $phone = '';
 
-    #[Rule('required|numeric')]
+    #[Rule('required')]
     public string $solution = '';
 
-    #[Rule('min:10|max:225')]
-    public string $message_ = "";
+    #[Rule("required|min:3|max:50")]
+    public string $address = "";
     public function createQuote()
     {
         $this->dispatch("quote-form:submit");
-        sleep(1);
-        $validated = $this->validate(attributes: ["name", 'email', "phone", "company", "solution"]);
-        $this->reset();
-        // dd($validated);
-        session()->flash("success", "
+        $validated = $this->validate();
+
+        try {
+            $customer = Customer::create($validated);
+            $this->reset();
+            session()->flash("success", "
             Your estimate request was sent successfully.");
+        } catch (\Throwable $th) {
+            $this->reset();
+            session()->flash("error", "Can not process request at this time, try again later");
+        }
+        // // // dd($validated);
+
+
         //code...
 
     }

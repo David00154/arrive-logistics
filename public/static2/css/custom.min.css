@@ -1,2 +1,9 @@
+.invalid-error {
+    width: 100%;
+    margin-top: 0.70rem;
+    font-size: .899em;
+    display: inline-block;
+    color: #ff4141;
+}
 
 /*# sourceMappingURL=custom.min.css.map */

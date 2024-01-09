@@ -50,7 +50,7 @@
                            <select wire:model='solution' id="solution" class="form-control">
                                <option value="">{{ __('Consignment Solution') }}</option>
                                @foreach ($solutions as $solution_)
-                                   <option value="{{ $solution_['value'] }}">{{ $solution_['title'] }}</option>
+                                   <option value="{{ $solution_['title'] }}">{{ $solution_['title'] }}</option>
                                @endforeach
                            </select>
                            @error('solution')
@@ -60,13 +60,23 @@
                    </div>
                    <div class="col-lg-6">
                        <div class="form-group">
+                           <label for="address" class="form-label color-grey-700">Address</label>
+                           <input id="address" wire:model='address' class="form-control" type="text"
+                               placeholder="(required)">
+                           @error('address')
+                               <span class="invalid-error">{{ $message }}</span>
+                           @enderror
+                       </div>
+                   </div>
+                   {{-- <div class="col-lg-6">
+                       <div class="form-group">
                            <label for="message_" class="form-label color-grey-700">Message / Note</label>
                            <textarea wire:model="message_" class="form-control" id="message_" rows="5" placeholder="Enter a message"></textarea>
                            @error('message_')
                                <span class="invalid-error">{{ $message }}</span>
                            @enderror
                        </div>
-                   </div>
+                   </div> --}}
                </div>
            </div>
            <div class="col-lg-4 d-lg-inline-block d-none">
