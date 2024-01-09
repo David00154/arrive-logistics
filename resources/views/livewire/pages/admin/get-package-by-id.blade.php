@@ -1,8 +1,6 @@
 <div class="row">
     <!-- start page title -->
-    @if ($page)
-        <x-admin.page-title title="Packages" />
-    @endif
+    <x-admin.page-title title="Packages" />
     <!-- end page title -->
     <div class="col-lg-12">
         <div class="card">
@@ -11,7 +9,6 @@
             </div><!-- end card header -->
 
             <div class="card-body">
-
                 @if (session('error'))
                     <div class="alert alert-danger alert-dismissible alert-outline fade show" role="alert">
                         <strong> Error! </strong> - {{ session('error') }}

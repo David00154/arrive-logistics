@@ -12,7 +12,7 @@
     <!-- jsvectormap css -->
     <link href="{{ env('STATIC_ASSET_URL') }}/static2/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet"
         type="text/css" />
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!--Swiper slider css-->
     <link href="{{ env('STATIC_ASSET_URL') }}/static2/libs/swiper/swiper-bundle.min.css" rel="stylesheet"
         type="text/css" />
@@ -30,6 +30,7 @@
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
+
 </head>
 
 <body>
@@ -47,7 +48,10 @@
         <div class="main-content">
 
             <div class="page-content">
-                {{ $slot }}
+                <div class="container-fluid">
+
+                    {{ $slot }}
+                </div>
             </div>
         </div>
         <!-- end main content-->
@@ -71,6 +75,27 @@
     </div>
 
     <!-- JAVASCRIPT -->
+
+    <script defer>
+        let copyBtns = document.querySelectorAll("#btn-should-copy")
+        copyBtns.forEach((btn) => {
+            let value = btn.dataset.value
+            btn.onclick = () => {
+                btn.disabled = true;
+                navigator.clipboard.writeText(value).then(() => {
+                    btn.textContent = "copied"
+                    setTimeout(() => {
+                        btn.textContent = "copy"
+                        btn.disabled = false;
+                    }, 800)
+                })
+            }
+        })
+    </script>
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/libs/simplebar/simplebar.min.js"></script>
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/libs/node-waves/waves.min.js"></script>
@@ -90,6 +115,10 @@
 
     <!-- Dashboard init -->
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/js/pages/dashboard-ecommerce.init.js"></script>
+
+
+
+    <script src="{{ env('STATIC_ASSET_URL') }}/static2/js/pages/select2.init.js"></script>
 
     <!-- App js -->
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/js/app.js"></script>

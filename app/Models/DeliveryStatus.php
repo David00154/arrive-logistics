@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Package extends Model
+class DeliveryStatus extends Model
 {
     use HasFactory, HasUuids;
 
@@ -17,11 +17,7 @@ class Package extends Model
 
     protected $guarded = [];
 
-    protected $fillable = ['package_name', 'description', 'weight', 'dimensions', 'customer_id'];
-
-    protected $casts = [
-        "weight" => "double",
-    ];
+    protected $fillable = ['status', 'location', 'customer_id'];
 
     public function customer(): BelongsTo
     {

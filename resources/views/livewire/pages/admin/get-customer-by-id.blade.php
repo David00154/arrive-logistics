@@ -1,13 +1,11 @@
 <div class="row">
     <!-- start page title -->
-    @if ($page)
-        <x-admin.page-title title="Customers" />
-    @endif
+    <x-admin.page-title title="Customer" />
     <!-- end page title -->
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header align-items-center d-flex">
-                <h4 class="card-title mb-0 flex-grow-1">All available customers</h4>
+                {{-- <h4 class="card-title mb-0 flex-grow-1">All available customers</h4> --}}
             </div><!-- end card header -->
 
             <div class="card-body">
@@ -55,60 +53,57 @@
                                             <i class="ri-arrow-right-line align-middle"></i></a>
                                     </td>
                                 </tr> --}}
-                                @foreach ($customers as $customer)
-                                    <tr wire:key='{{ $customer['id'] }}'>
-                                        <td><a class="btn btn-outline-success btn-sm"
-                                                href="{{ route('edit-customer', ['id' => $customer['id']]) }}">Edit
-                                                Customer</a>
-                                        </td>
+                                <tr wire:key='{{ $customer['id'] }}'>
+                                    <td><a class="btn btn-outline-success btn-sm"
+                                            href="{{ route('edit-customer', ['id' => $customer['id']]) }}">Edit
+                                            Customer</a>
+                                    </td>
+                                    <td>
+                                        <button id="btn-should-copy" data-value="{{ $customer['id'] }}" type="button"
+                                            class="btn btn-outline-primary btn-sm" style="margin-right: 5px">
+                                            <span>Copy</span>
+                                        </button>
+                                        <a href="#"
+                                            class="fw-medium">{{ explode('-', $customer['id'], 4)[3] }}</a>
+                                    </td>
+                                    <td>{{ $customer['name'] }}</td>
+                                    <td>{{ $customer['email'] }}</td>
+                                    <td>{{ $customer['phone'] }}</td>
+                                    <td>
+                                        @if (count($customer->delivery_statuses) <= 0)
+                                            {{ __('null') }}
+                                        @else
+                                            {{ $customer->delivery_statuses->first()['status'] }}
+                                        @endif
+                                    </td>
+                                    <td>{{ $customer['address'] }}</td>
+                                    @if ($customer['tracking_id'] == null)
                                         <td>
-                                            <button id="btn-should-copy" data-value="{{ $customer['id'] }}"
+                                            <button type="button" class="btn btn-outline-primary btn-sm"
+                                                style="margin-right: 5px"
+                                                x-on:click="(function() {
+                                                        $wire.assignTrackingId('{{ $customer['id'] }}')
+                                                        window.location.reload()
+                                                    })">
+                                                Generate </button>
+                                        </td>
+                                    @else
+                                        <td>
+                                            <button id="btn-should-copy" data-value="{{ $customer['tracking_id'] }}"
                                                 type="button" class="btn btn-outline-primary btn-sm"
                                                 style="margin-right: 5px">
                                                 <span>Copy</span>
                                             </button>
-                                            <a href="#"
-                                                class="fw-medium">{{ explode('-', $customer['id'], 4)[3] }}</a>
+                                            {{ $customer['tracking_id'] }}
                                         </td>
-                                        <td>{{ $customer['name'] }}</td>
-                                        <td>{{ $customer['email'] }}</td>
-                                        <td>{{ $customer['phone'] }}</td>
-                                        <td>
-                                            @if (count($customer->delivery_statuses) <= 0)
-                                                {{ __('null') }}
-                                            @else
-                                                {{ $customer->delivery_statuses->first()['status'] }}
-                                            @endif
-                                        </td>
-                                        <td>{{ $customer['address'] }}</td>
-                                        @if ($customer['tracking_id'] == null)
-                                            <td>
-                                                <button type="button" class="btn btn-outline-primary btn-sm"
-                                                    style="margin-right: 5px"
-                                                    x-on:click="(function() {
-                                                        $wire.assignTrackingId('{{ $customer['id'] }}')
-                                                        window.location.reload()
-                                                    })">
-                                                    Generate </button>
-                                            </td>
-                                        @else
-                                            <td>
-                                                <button id="btn-should-copy"
-                                                    data-value="{{ $customer['tracking_id'] }}" type="button"
-                                                    class="btn btn-outline-primary btn-sm" style="margin-right: 5px">
-                                                    <span>Copy</span>
-                                                </button>
-                                                {{ $customer['tracking_id'] }}
-                                            </td>
-                                        @endif
-                                        <td><a href="{{ route('package-by-id', ['id' => $customer['id']]) }}">See all
-                                                packages</a></td>
-                                        <td>{{ $customer['created_at'] }}</td>
-                                        <td><a class="btn btn-outline-danger btn-sm"
-                                                href="{{ route('delete-customer', ['id' => $customer['id']]) }}">Delete</a>
-                                        </td>
-                                    </tr>
-                                @endforeach
+                                    @endif
+                                    <td><a href="{{ route('package-by-id', ['id' => $customer['id']]) }}">See all
+                                            packages</a></td>
+                                    <td>{{ $customer['created_at'] }}</td>
+                                    <td><a class="btn btn-outline-danger btn-sm"
+                                            href="{{ route('delete-customer', ['id' => $customer['id']]) }}">Delete</a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

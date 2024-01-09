@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Enums\DeliveryStatus;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -18,15 +17,18 @@ class Customer extends Model
 
     protected $guarded = [];
 
-    protected $fillable = ["name", "email", "phone", "address", "message", "tracking_id", "delivery_date", "estimated_delivery_time", "solution", "delivery_status", "delivery_amount", "payment_status"];
+    protected $fillable = ["name", "email", "phone", "address", "tracking_id", "delivery_date", "estimated_delivery_time", "solution", "delivery_amount", "payment_status"];
 
     public function packages(): HasMany
     {
         return $this->hasMany(Package::class);
     }
+    public function delivery_statuses(): HasMany
+    {
+        return $this->hasMany(DeliveryStatus::class);
+    }
 
     protected $casts = [
-        "delivery_status" => DeliveryStatus::class,
         "delivery_date" => "timestamp",
         "estimated_delivery_time" => "timestamp",
         "payment_status" => "boolean",

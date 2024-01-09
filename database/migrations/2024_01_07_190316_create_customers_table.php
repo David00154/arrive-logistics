@@ -20,7 +20,6 @@ return new class extends Migration {
             $table->string('tracking_id')->unique()->nullable(true);
             $table->timestamp('delivery_date')->nullable();
             $table->timestamp('estimated_delivery_time')->nullable();
-            $table->string("delivery_status")->nullable();
             $table->double("delivery_amount")->nullable();
             $table->boolean("payment_status")->default(false);
             $table->timestamps();

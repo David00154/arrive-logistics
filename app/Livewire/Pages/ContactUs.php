@@ -35,7 +35,6 @@ class ContactUs extends Component
     }
     public function submitForm()
     {
-        sleep(1);
         $validated = $this->validate();
         try {
             Mail::to(env("MAIL_USERNAME"))->send(new ContactUsMail($validated['name'], $validated['email'], $validated['subject']));
