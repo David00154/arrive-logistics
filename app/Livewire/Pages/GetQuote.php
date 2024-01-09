@@ -49,7 +49,7 @@ class GetQuote extends Component
             session()->flash("success", "
             Your estimate request was sent successfully.");
         } catch (\Throwable $th) {
-            session()->flash("error", $th->getMessage());
+            session()->flash("error", "Can not process request at this time, try again later");
         }
         // // // dd($validated);
 
