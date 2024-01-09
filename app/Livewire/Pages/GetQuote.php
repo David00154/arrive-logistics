@@ -30,7 +30,7 @@ class GetQuote extends Component
     #[Rule("required|email:strict|max:50")]
     public string $email = '';
 
-    #[Rule("required|min:12")]
+    #[Rule("required|max:12")]
     public string $phone = '';
 
     #[Rule('required')]

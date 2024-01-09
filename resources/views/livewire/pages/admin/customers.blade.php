@@ -37,6 +37,7 @@
                                     <th scope="col">Address</th>
                                     <th scope="col">Tracking ID</th>
                                     <th scope="col">Packages</th>
+                                    <th scope="col">Courier Solution</th>
                                     <th scope="col">Date Registered</th>
                                     <th scope="col"></th>
                                     {{-- <th scope="col">Customer</th>
@@ -103,6 +104,7 @@
                                         @endif
                                         <td><a href="{{ route('package-by-id', ['id' => $customer['id']]) }}">See all
                                                 packages</a></td>
+                                        <td>{{ $customer['solution'] }}</td>
                                         <td>{{ $customer['created_at'] }}</td>
                                         <td><a class="btn btn-outline-danger btn-sm"
                                                 href="{{ route('delete-customer', ['id' => $customer['id']]) }}">Delete</a>
