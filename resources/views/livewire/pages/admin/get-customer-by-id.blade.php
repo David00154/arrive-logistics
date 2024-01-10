@@ -26,7 +26,7 @@
                         <table class="table align-middle table-nowrap mb-0">
                             <thead>
                                 <tr>
-                                    <th scope="col"></th>
+                                    {{-- <th scope="col"></th> --}}
                                     <th scope="col">ID</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
@@ -54,10 +54,10 @@
                                     </td>
                                 </tr> --}}
                                 <tr wire:key='{{ $customer['id'] }}'>
-                                    <td><a class="btn btn-outline-success btn-sm"
+                                    {{-- <td><a class="btn btn-outline-success btn-sm"
                                             href="{{ route('edit-customer', ['id' => $customer['id']]) }}">Edit
                                             Customer</a>
-                                    </td>
+                                    </td> --}}
                                     <td>
                                         <button id="btn-should-copy" data-value="{{ $customer['id'] }}" type="button"
                                             class="btn btn-outline-primary btn-sm" style="margin-right: 5px">
@@ -70,11 +70,8 @@
                                     <td>{{ $customer['email'] }}</td>
                                     <td>{{ $customer['phone'] }}</td>
                                     <td>
-                                        @if (count($customer->delivery_statuses) <= 0)
-                                            {{ __('null') }}
-                                        @else
-                                            {{ $customer->delivery_statuses->first()['status'] }}
-                                        @endif
+                                        <a href="{{ route('delivery-status-by-id', ['id' => $customer['id']]) }}">See
+                                            status</a>
                                     </td>
                                     <td>{{ $customer['address'] }}</td>
                                     @if ($customer['tracking_id'] == null)

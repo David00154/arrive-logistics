@@ -1,5 +1,5 @@
 <div>
-    <x-admin.page-title title="Create Package" />
+    <x-admin.page-title title="Update Delivery Status" />
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -48,10 +48,28 @@
                     <form wire:submit='submit' class="row gy-4">
                         <div class="col-xxl-3 col-md-6">
                             <div>
-                                <label for="package_name" class="form-label">Package Name</label>
-                                <input placeholder="Enter a package name" wire:model='package_name' type="text"
-                                    class="form-control" id="package_name">
-                                @error('package_name')
+                                <label for="delivery_status" class="form-label">Delivery Status</label>
+                                <select id="delivery_status" wire:model='status' class="form-select">
+                                    <option selected>Choose a delivery status</option>
+                                    @foreach ($statuses as $status)
+                                        <option value="{{ $status }}">{{ $status }}</option>
+                                    @endforeach
+                                </select>
+                                @error('status')
+                                    <div id="passwordHelpBlock" class="form-text text-danger">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                        </div>
+                        {{-- end col --}}
+
+                        <div class="col-xxl-3 col-md-6">
+                            <div>
+                                <label for="location" class="form-label">Location</label>
+                                <input placeholder="Enter a location (optional)" wire:model='location' type="text"
+                                    class="form-control" id="location">
+                                @error('location')
                                     <div id="passwordHelpBlock" class="form-text text-danger">
                                         {{ $message }}
                                     </div>
@@ -59,44 +77,7 @@
                             </div>
                         </div>
                         <!--end col-->
-                        <div class="col-xxl-3 col-md-6">
-                            <div>
-                                <label for="description" class="form-label">Description</label>
-                                <input placeholder="Enter a package description" wire:model='description' type="text"
-                                    class="form-control" id="description">
-                                @error('description')
-                                    <div id="passwordHelpBlock" class="form-text text-danger">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-xxl-3 col-md-6">
-                            <div>
-                                <label for="weight" class="form-label">Package Weight</label>
-                                <input placeholder="Enter a package weight" wire:model='weight' type="number"
-                                    class="form-control" id="weight">
-                                @error('weight')
-                                    <div id="passwordHelpBlock" class="form-text text-danger">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-xxl-3 col-md-6">
-                            <div>
-                                <label for="dimensions" class="form-label">Package Dimension</label>
-                                <input placeholder="Enter a package dimension" wire:model='dimensions' type="text"
-                                    class="form-control" id="dimensions">
-                                @error('dimensions')
-                                    <div id="passwordHelpBlock" class="form-text text-danger">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-                        </div>
+
                         {{-- end col --}}
                         <div class="col-xxl-3 col-md-6">
                             <div>
@@ -115,51 +96,11 @@
                             </div>
                         </div>
                         {{-- end col --}}
-                        {{-- @if ($errors->any())
-                            <div class="col-xxl-4 col-md-8">
-                                <div>
-                                    <!-- Danger Alert -->
-                                    <div class="alert alert-danger alert-dismissible alert-outline fade show"
-                                        role="alert">
-                                        <strong> Error! </strong> - Unable to submit the form. Fix this errors above.
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-                        @if (session('error'))
-                            <div class="col-xxl-4 col-md-8">
-                                <div>
-                                    <!-- Danger Alert -->
-                                    <div class="alert alert-danger alert-dismissible alert-outline fade show"
-                                        role="alert">
-                                        <strong> Error! </strong> - {{ session('error') }}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-                        @if (session('success'))
-                            <div class="col-xxl-4 col-md-8">
-                                <div>
-                                    <!-- Success Alert -->
-                                    <div class="alert alert-success alert-dismissible alert-outline fade show"
-                                        role="alert">
-                                        <strong> Success! </strong> - {{ session('success') }}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif --}}
-                        <!--end col-->
                         <div class="col-xxl-3 col-md-12">
                             <div>
                                 <button class="btn btn-primary w-100" type="submit">
                                     <span class="d-flex align-items-center">
-                                        <span class="flex-grow-1 ms-2">Create</span>
+                                        <span class="flex-grow-1 ms-2">Update Status</span>
                                         <span wire:loading class="spinner-border spinner-border-sm flex-shrink-0"
                                             role="status">
                                             <span class="visually-hidden">Loading...</span>
@@ -170,11 +111,8 @@
                         </div>
                         <!--end col-->
                     </form>
-                    <!--end row-->
                 </div>
             </div>
         </div>
-        {{-- end col --}}
     </div>
-    {{-- end row --}}
 </div>

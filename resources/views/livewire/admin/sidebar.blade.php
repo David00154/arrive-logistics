@@ -9,6 +9,10 @@ state([
             'href' => route('dashboard'),
         ],
         [
+            'title' => 'Send Mail',
+            'href' => route('send-mail'),
+        ],
+        [
             'title' => 'Packages',
             'href' => route('packages'),
         ],
@@ -19,6 +23,10 @@ state([
         [
             'title' => 'Customers',
             'href' => route('customers'),
+        ],
+        [
+            'title' => 'Update Delivery Status',
+            'href' => route('update-delivery-status'),
         ],
     ],
 ]);

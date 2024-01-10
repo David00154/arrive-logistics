@@ -103,6 +103,12 @@
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/js/plugins.js"></script>
 
+    <!-- ckeditor -->
+    {{-- <script src="{{ env('STATIC_ASSET_URL') }}/static2/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script> --}}
+
+    <!-- init js -->
+    {{-- <script src="{{ env('STATIC_ASSET_URL') }}/static2/js/pages/form-editor.init.js"></script> --}}
+
     <!-- apexcharts -->
     <script src="{{ env('STATIC_ASSET_URL') }}/static2/libs/apexcharts/apexcharts.min.js"></script>
 

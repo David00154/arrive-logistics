@@ -1,11 +1,11 @@
 <div class="row">
     <!-- start page title -->
-    <x-admin.page-title title="Packages" />
+    <x-admin.page-title title="Customer Delivery Status" />
     <!-- end page title -->
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header align-items-center d-flex">
-                <h4 class="card-title mb-0 flex-grow-1">All available package</h4>
+                <h4 class="card-title mb-0 flex-grow-1">Delivery Status for {{ explode('-', $customer_id)[0] }}</h4>
             </div><!-- end card header -->
 
             <div class="card-body">
@@ -28,11 +28,10 @@
                                 <tr>
                                     {{-- <th scope="col"></th> --}}
                                     <th scope="col">ID</th>
-                                    <th scope="col">Package Name</th>
-                                    <th scope="col">Package Dimension</th>
-                                    <th scope="col">Package Weight</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Location</th>
                                     <th scope="col">Customer</th>
-                                    <th scope="col">Date Created</th>
+                                    <th scope="col">Date</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
@@ -46,30 +45,26 @@
                                             <i class="ri-arrow-right-line align-middle"></i></a>
                                     </td>
                                 </tr> --}}
-                                @foreach ($packages as $package)
-                                    <tr wire:key='{{ $package['id'] }}'>
+                                @foreach ($statuses as $status)
+                                    <tr wire:key='{{ $status['id'] }}'>
                                         {{-- <td><a class="btn btn-outline-success btn-sm"
-                                                href="{{ route('edit-package', ['id' => $package['id']]) }}">Edit
-                                                Package</a>
+                                                href="{{ route('edit-status', ['id' => $status['id']]) }}">Edit
+                                                status</a>
                                         </td> --}}
-
                                         <td>
-                                            <button id="btn-should-copy" data-value="{{ $package['id'] }}"
-                                                type="button" class="btn btn-outline-primary btn-sm"
-                                                style="margin-right: 5px">
+                                            <button id="btn-should-copy" data-value="{{ $status['id'] }}" type="button"
+                                                class="btn btn-outline-primary btn-sm" style="margin-right: 5px">
                                                 <span>Copy</span>
                                             </button>
-                                            <a href="#"
-                                                class="fw-medium">{{ explode('-', $package['id'], 4)[3] }}</a>
+                                            <a href="#" class="fw-medium">{{ explode('-', $status['id'])[0] }}</a>
                                         </td>
-                                        <td>{{ $package['package_name'] }}</td>
-                                        <td>{{ $package['dimensions'] }}</td>
-                                        <td>{{ $package['weight'] }}</td>
-                                        <td><a href="{{ route('customer-by-id', ['id' => $package->customer['id']]) }}">
-                                                {{ $package->customer['name'] }}</a></td>
-                                        <td>{{ $package['created_at'] }}</td>
+                                        <td>{{ $status['status'] }}</td>
+                                        <td>{{ $status['location'] }}</td>
+                                        <td><a href="{{ route('customer-by-id', ['id' => $status['customer_id']]) }}">See
+                                                customer</a></td>
+                                        <td>{{ $status['created_at'] }}</td>
                                         <td><a class="btn btn-outline-danger btn-sm"
-                                                href="{{ route('delete-package', ['id' => $package['id']]) }}">Delete</a>
+                                                href="{{ route('delete-status', ['id' => $status['id']]) }}">Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach
