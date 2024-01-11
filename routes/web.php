@@ -24,6 +24,8 @@ Volt::route("/faqs", "pages.faqs")->name("faq");
 
 Route::get("/contact-us", ContactUs::class)->name("contact-us");
 
+Route::view("test-email", "mail.send-mail");
+
 // Route::group(["prefix"=> "our-services"], function () {
 //     Route::view("/", "services")
 // });

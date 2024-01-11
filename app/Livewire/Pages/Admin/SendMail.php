@@ -31,7 +31,7 @@ class SendMail extends Component
         if ($body == "") {
             return "<br>";
         } else {
-            return "<p>" . $body . "</p>";
+            return "<p style=\"color:#000000;margin: 0 0 0px\">" . $body . "</p>";
         }
     }
 

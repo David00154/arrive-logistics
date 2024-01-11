@@ -18,7 +18,7 @@ class ContactUsMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(private string $name, private string $email, string $subject)
+    public function __construct(private string $name, private string $email, string $subject, private string $message)
     {
         $this->subject = $subject;
         //
@@ -30,7 +30,7 @@ class ContactUsMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: "{$this->email}: {$this->subject}",
+            subject: $this->subject,
         );
     }
 
@@ -41,7 +41,7 @@ class ContactUsMail extends Mailable
     {
         return new Content(
             view: 'mail.contact-us-email',
-            with: ["name" => $this->name, "email" => $this->email],
+            with: ["name" => $this->name, "email" => $this->email, "body" => $this->message],
         );
     }
 

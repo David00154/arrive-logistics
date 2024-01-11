@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- <x-mail-layout>
+    <x-slot:title>
+        {{ $subject }}
+    </x-slot:title>
+    <x-slot:title>
+        {!! $body !!}
+    </x-slot:title>
+</x-mail-layout> --}}
+{{-- hello test again
 
-<head>
-</head>
+herer... --}}
+@extends('layouts.mail')
 
-<body>
-    {!! $subject !!}
-    <br>
+@section('title', $subject)
+
+@section('slot')
     {!! $body !!}
-</body>
-
-</html>
+@stop
