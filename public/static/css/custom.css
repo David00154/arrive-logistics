@@ -13,3 +13,59 @@ label {
     display: inline-block;
     color: #ff4141;
 }
+
+.box-info-trackyourparcel {
+    padding: 74px 0;
+}
+
+
+.banner-trackyourparcel {
+    height: 477px;
+}
+
+.tracking-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tracking-info .tracking-info-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.7rem;
+
+}
+
+.tracking-info .tracking-info-detail .tracking-info-cirle {
+    gap: 0.40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.tracking-info .tracking-info-detail .tracking-info-cirle .tracking-info-circle-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 100%;
+    background-color: #041C2F;
+    height: 11px;
+    width: 11px;
+}
+
+.tracking-info .tracking-info-detail .tracking-info-cirle .tracking-info-bar {
+    width: 0.25rem;
+    height: 87px;
+    background-color: #041C2F;
+    align-self: center;
+}
+
+.tracking-info .tracking-info-detail .tracking-info-detail-text {
+    color: #041C2F;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/*  */

@@ -20,8 +20,8 @@ class UpdateDeliveryStatus extends Component
     #[Rule("required|string")]
     public string $status;
 
-    #[Rule("min:3")]
-    public string $location;
+    #[Rule("string")]
+    public string $location = '';
 
     public function submit()
     {
