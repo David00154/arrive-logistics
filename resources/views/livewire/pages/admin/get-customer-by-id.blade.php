@@ -78,10 +78,7 @@
                                         <td>
                                             <button type="button" class="btn btn-outline-primary btn-sm"
                                                 style="margin-right: 5px"
-                                                x-on:click="(function() {
-                                                        $wire.assignTrackingId('{{ $customer['id'] }}')
-                                                        window.location.reload()
-                                                    })">
+                                                wire:click="assignTrackingId('{{ $customer['id'] }}')">
                                                 Generate </button>
                                         </td>
                                     @else

@@ -24,6 +24,7 @@ class Customers extends Component
     {
         $trackingID = $this->generateTrackingID();
         $updated = Customer::where('id', $customer_id)->update(['tracking_id' => $trackingID]);
+        $this->redirect("/customers");
     }
 
     private function generateTrackingID($length = 10)
