@@ -33,7 +33,7 @@
                                 <tr>
                                     <td align="center" valign="top">
                                         <table id="v1template_header"
-                                            style="background-color: #FEC201; color: #fff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: 'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif; border-radius: 3px 3px 0 0"
+                                            style="background-color: #7f54b3; color: #fff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: 'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif; border-radius: 3px 3px 0 0"
                                             border="0" width="100%" cellspacing="0" cellpadding="0"
                                             bgcolor="#FEC201">
                                             <tbody>
@@ -71,7 +71,7 @@
                                                                             {{-- <p style="margin: 0 0 16px"></p> --}}
 
                                                                             <h2
-                                                                                style="color: #FEC201; display: block; font-family: 'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif; font-size: 16px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left">
+                                                                                style="color: #7f54b3; display: block; font-family: 'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif; font-size: 16px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left">
                                                                                 Our Company</h2>
                                                                             <p
                                                                                 style="margin: 0 0 16px; font-size: 14px; color: #636363;">
@@ -95,7 +95,7 @@
                                                                                 regions to meet the unique needs of our
                                                                                 diverse clientele. <br><br>Visit <a
                                                                                     class="v1link"
-                                                                                    style="font-weight: normal; text-decoration: underline; color: #FEC201"
+                                                                                    style="font-weight: normal; text-decoration: underline; color: #7f54b3"
                                                                                     href="{{ env('APP_URL') }}"
                                                                                     target="_blank" rel="noreferrer">our
                                                                                     Website</a> to
@@ -128,7 +128,7 @@
                                                         style="border-radius: 6px; border: 0; color: #8a8a8a; font-family: 'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif; font-size: 12px; line-height: 150%; text-align: center; padding: 24px 0"
                                                         colspan="2" align="center" valign="middle">
                                                         <p style="margin: 0 0 16px">Copyright © {{ date('Y') }} <a
-                                                                style="color: #FEC201; font-weight: normal; text-decoration: underline"
+                                                                style="color: #7f54b3; font-weight: normal; text-decoration: underline"
                                                                 href="{{ env('APP_URL') }}" target="_blank"
                                                                 rel="noreferrer">{{ env('APP_NAME') }}</a> All Rights
                                                             Reserved.</p>
