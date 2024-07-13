@@ -15,7 +15,7 @@ class Packages extends Component
     public function render()
     {
         return view('livewire.pages.admin.packages', [
-            'packages' => Package::all()
+            'packages' => Package::all()->load("customer")
         ]);
     }
 }

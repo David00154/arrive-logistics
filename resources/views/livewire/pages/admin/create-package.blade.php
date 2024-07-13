@@ -48,6 +48,18 @@
                     <form wire:submit='submit' class="row gy-4">
                         <div class="col-xxl-3 col-md-6">
                             <div>
+                                <label for="delivery_date" class="form-label">Delivery Date and Time</label>
+                                <input wire:model='delivery_date' type="datetime-local" class="form-control"
+                                    id="delivery_date">
+                                @error('delivery_date')
+                                    <div id="passwordHelpBlock" class="form-text text-danger">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6">
+                            <div>
                                 <label for="package_name" class="form-label">Package Name</label>
                                 <input placeholder="Enter a package name" wire:model='package_name' type="text"
                                     class="form-control" id="package_name">
@@ -168,6 +180,7 @@
                                 </button>
                             </div>
                         </div>
+
                         <!--end col-->
                     </form>
                     <!--end row-->

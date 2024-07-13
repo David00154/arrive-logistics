@@ -5,6 +5,7 @@ use App\Livewire\Pages\Admin\CreatePackage;
 use App\Livewire\Pages\Admin\Customers;
 use App\Livewire\Pages\Admin\DeliveryStatusById;
 use App\Livewire\Pages\Admin\EditCustomer;
+use App\Livewire\Pages\Admin\EditPackage;
 use App\Livewire\Pages\Admin\GetCustomerById;
 use App\Livewire\Pages\Admin\GetPackageById;
 use App\Livewire\Pages\Admin\Packages;
@@ -25,7 +26,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('customers', Customers::class)->name('customers');
     Route::get('edit-customer/{id}', EditCustomer::class)->name('edit-customer');
     Route::get('packages', Packages::class)->name('packages');
-    Route::get('edit-package/{id}', Customers::class)->name('edit-package');
+    Route::get('edit-package/{id}', EditPackage::class)->name('edit-package');
     Route::get('create-package', CreatePackage::class)->name('create-package');
     Route::get('customer/{id}', GetCustomerById::class)->name('customer-by-id');
     Route::get('package/{id}', GetPackageById::class)->name('package-by-id');

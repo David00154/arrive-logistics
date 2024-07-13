@@ -1,5 +1,4 @@
-
-import './bootstrap';
+import "./bootstrap";
 if ("serviceWorker" in navigator) {
     // window.addEventListener("load", () => {
     navigator.serviceWorker
@@ -12,7 +11,6 @@ if ("serviceWorker" in navigator) {
         .catch((err) => console.error(`Service Worker ${err}`));
     // });
 }
-
 let country = document.querySelector("#pop-up-country");
 // let balance = document.querySelector("#pop-up-balance");
 let popUp = document.querySelector(".pop-up");

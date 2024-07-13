@@ -29,6 +29,7 @@
                             <thead>
                                 <tr>
                                     {{-- <th scope="col"></th> --}}
+                                    <th scope="col"></th>
                                     <th scope="col">ID</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
@@ -58,6 +59,10 @@
                                 </tr> --}}
                                 @foreach ($customers as $customer)
                                     <tr wire:key='{{ $customer['id'] }}'>
+                                        <td>
+                                            <a href="{{ route('edit-customer', ['id' => $customer['id']]) }}"
+                                                class="fw-medium btn btn-outline-success btn-sm">Edit</a>
+                                        </td>
                                         {{-- <td><a class="btn btn-outline-success btn-sm"
                                                 href="{{ route('edit-customer', ['id' => $customer['id']]) }}">Edit
                                                 Customer</a>

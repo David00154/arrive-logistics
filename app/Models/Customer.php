@@ -29,7 +29,7 @@ class Customer extends Model
     }
 
     protected $casts = [
-        "delivery_date" => "timestamp",
+        "delivery_date" => "datetime",
         "estimated_delivery_time" => "timestamp",
         "payment_status" => "boolean",
         "delivery_amount" => "double"

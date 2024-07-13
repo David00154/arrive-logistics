@@ -46,6 +46,18 @@
                         </div>
                     @endif
                     <form wire:submit='update' class="row gy-4">
+                        <div class="col-xxl-3 col-md-6">
+                            <div>
+                                <label for="name" class="form-label">Customer Name </label>
+                                <input wire:model.lazy="name" value="PP" type="text" class="form-control"
+                                    placeholder="Name" id="name">
+                                @error('name')
+                                    <div id="passwordHelpBlock" class="form-text text-danger">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                        </div>
                         {{--  --}}
                         <div class="col-xxl-3 col-md-12">
                             <div>

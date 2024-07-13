@@ -27,6 +27,7 @@
                             <thead>
                                 <tr>
                                     {{-- <th scope="col"></th> --}}
+                                    <th scope="col"></th>
                                     <th scope="col">ID</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
@@ -58,6 +59,10 @@
                                             href="{{ route('edit-customer', ['id' => $customer['id']]) }}">Edit
                                             Customer</a>
                                     </td> --}}
+                                    <td>
+                                        <a href="{{ route('edit-customer', ['id' => $customer['id']]) }}"
+                                            class="fw-medium btn btn-outline-success btn-sm">Edit</a>
+                                    </td>
                                     <td>
                                         <button id="btn-should-copy" data-value="{{ $customer['id'] }}" type="button"
                                             class="btn btn-outline-primary btn-sm" style="margin-right: 5px">

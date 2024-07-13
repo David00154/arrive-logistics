@@ -27,6 +27,7 @@
                             <thead>
                                 <tr>
                                     {{-- <th scope="col"></th> --}}
+                                    <th scope="col"></th>
                                     <th scope="col">ID</th>
                                     <th scope="col">Package Name</th>
                                     <th scope="col">Package Dimension</th>
@@ -52,7 +53,10 @@
                                                 href="{{ route('edit-package', ['id' => $package['id']]) }}">Edit
                                                 Package</a>
                                         </td> --}}
-
+                                        <td>
+                                            <a href="{{ route('edit-package', ['id' => $package['id']]) }}"
+                                                class="fw-medium btn btn-outline-success btn-sm">Edit</a>
+                                        </td>
                                         <td>
                                             <button id="btn-should-copy" data-value="{{ $package['id'] }}"
                                                 type="button" class="btn btn-outline-primary btn-sm"
