@@ -28,7 +28,7 @@ class TrackParcelController extends Controller
                 'tracking_id' => $tracking_id,
                 "customer_id" => $customer->id,
                 "customer_email" => $customer->email,
-                "delivery_date" => $customer->delivery_date->format('d F, Y H:i'),
+                "delivery_date" => $customer->delivery_date,
                 "address" => $customer->address,
                 "package_names" => $this->getPackageNames($customer['packages']),
                 'is_status_failed' => $this->getLastIndex($customer->delivery_statuses)

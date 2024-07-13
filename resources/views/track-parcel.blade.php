@@ -78,7 +78,8 @@
                                 {{-- <div class="row"> --}}
                                 <div class="col-lg mb-20">
                                     <p class="text-md hd color-grey-300">Time</p>
-                                    <p class="tl">{{ $delivery_date }}</p>
+                                    <p class="tl">
+                                        {{ $delivery_date == null ? '' : $delivery_date->format('d F, Y H:i') }}</p>
                                 </div>
                                 <div class="col-lg mb-20">
                                     <p class="text-md color-grey-300">Email</p>
